@@ -1,0 +1,20 @@
+.btnLink {
+  border-radius: 8px;
+  background: var(--background-main);
+  border: 1px solid var(--gray);
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  @include mulish_700_18;
+  @include transition;
+
+  &.black {
+    background: var(--background-main);
+    color: var(--white);
+  }
+
+  &.white {
+    background: var(--white);
+    color: var(--background-main);
+  }
+}

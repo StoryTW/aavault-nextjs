@@ -1,0 +1,81 @@
+// Media Queries Mixins
+@mixin respond($breakpoint) {
+  @if $breakpoint == laptopXL {
+    @media only screen and (width <= 1440px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptopL {
+    @media only screen and (width <= 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptopM {
+    @media only screen and (width <= 838px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (width <= 824px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (width <= 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tabletL {
+    @media only screen and (width <= 540px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobileL {
+    @media only screen and (width <= 430px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (width <= 375px) {
+      @content;
+    }
+  }
+}
+
+// Smooth Transition
+@mixin transition {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+//FONTS
+@mixin mulish_700_18 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin Regular_16 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin Regular_20 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.2px;
+}

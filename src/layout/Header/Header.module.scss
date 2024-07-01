@@ -1,0 +1,14 @@
+.header {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 0px;
+
+    .rightSide {
+      display: flex;
+      align-items: center;
+      gap: 90px;
+    }
+  }
+}
