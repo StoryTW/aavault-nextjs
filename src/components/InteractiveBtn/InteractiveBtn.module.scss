@@ -12,7 +12,7 @@
     width: 100%;
     text-align: center;
 
-    @include respond(mobileL) {
+    @include respond(laptopL) {
       @include mulish_700_18;
       padding: 16px;
     }
@@ -28,7 +28,7 @@
     justify-content: center;
     border-radius: 4px;
 
-    @include respond(mobileL) {
+    @include respond(laptopL) {
       padding: 14.5px 15px;
     }
 

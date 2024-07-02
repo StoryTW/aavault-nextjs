@@ -1,23 +1,53 @@
 .mainPage {
+  min-height: calc(100vh - 142px);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(mobileL) {
+    min-height: calc(100vh - 114px);
+  }
+
   .wrapper {
     padding-top: 102px;
 
     .titleWrp {
       display: flex;
       align-items: end;
-      white-space: nowrap;
       margin-bottom: 224px;
+      flex-wrap: wrap;
+
+      @include respond(mobileL) {
+        margin-bottom: 112px;
+      }
 
       .title {
         @include mulish_1000_130;
         text-transform: uppercase;
         color: var(--white);
+
+        @include respond(laptopL) {
+          font-size: 72px;
+        }
+
+        @include respond(mobileL) {
+          font-size: 43px;
+        }
       }
+
       .aavault {
         @include mulish_500_14;
         color: var(--gray);
         margin-right: 16px;
-        padding-bottom: 60px;
+        padding-bottom: 70px;
+
+        @include respond(laptopL) {
+          padding-bottom: 40px;
+        }
+
+        @include respond(mobileL) {
+          padding-bottom: 20px;
+        }
       }
 
       .newWay {
@@ -26,6 +56,14 @@
         background: var(--gradient_green);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include respond(laptopL) {
+          font-size: 72px;
+        }
+
+        @include respond(mobileL) {
+          font-size: 43px;
+        }
       }
     }
 
@@ -33,8 +71,9 @@
       display: flex;
       justify-content: center;
       gap: 196px;
+      margin-bottom: 32px;
 
-      @include respond(laptopL) {
+      @include respond(laptopXL) {
         gap: 60px;
       }
 
@@ -55,10 +94,6 @@
         @include respond(mobileL) {
           @include mulish_500_14;
         }
-      }
-
-      .btn {
-        display: flex;
       }
     }
   }
