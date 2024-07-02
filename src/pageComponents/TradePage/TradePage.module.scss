@@ -1,0 +1,70 @@
+.tradePage {
+  min-height: calc(100vh - 142px);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(mobileL) {
+    min-height: calc(100vh - 114px);
+  }
+
+  .title {
+    @include mulish_1000_130;
+    color: var(--white);
+    text-transform: uppercase;
+    background: var(--gradient_green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 300px;
+    padding-top: 220px;
+    position: relative;
+    z-index: 2;
+
+    @include respond(laptopXL) {
+      padding-left: 200px;
+    }
+
+    @include respond(laptopL) {
+      font-size: 72px;
+    }
+
+    @include respond(laptopM) {
+      padding-top: 120px;
+      text-align: center;
+      padding-left: 0px;
+    }
+
+    @include respond(mobileL) {
+      font-size: 43px;
+    }
+  }
+
+  .robot {
+    background-image: url('/images/robot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 882px;
+    width: 1100px;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    z-index: 1;
+
+    @include respond(laptopXL) {
+      height: 582px;
+      width: 600px;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    @include respond(laptopM) {
+      height: 482px;
+      width: 500px;
+    }
+
+    @include respond(mobileL) {
+      height: 282px;
+      width: 280px;
+    }
+  }
+}

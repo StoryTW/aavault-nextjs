@@ -34,9 +34,27 @@
       justify-content: center;
       gap: 196px;
 
+      @include respond(laptopL) {
+        gap: 60px;
+      }
+
+      @include respond(laptopM) {
+        flex-direction: column;
+        gap: 32px;
+      }
+
       .content {
         @include mulish_500_24;
         color: var(--gray_2);
+
+        @include respond(laptopM) {
+          display: flex;
+          justify-content: end;
+        }
+
+        @include respond(mobileL) {
+          @include mulish_500_14;
+        }
       }
 
       .btn {

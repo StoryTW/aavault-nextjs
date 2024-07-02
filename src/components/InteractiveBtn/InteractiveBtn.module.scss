@@ -9,6 +9,13 @@
     border: 1px solid var(--gray);
     color: var(--white);
     @include mulish_700_24;
+    width: 100%;
+    text-align: center;
+
+    @include respond(mobileL) {
+      @include mulish_700_18;
+      padding: 16px;
+    }
   }
 
   .btn {
@@ -20,6 +27,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+
+    @include respond(mobileL) {
+      padding: 14.5px 15px;
+    }
 
     svg {
       color: var(--white);

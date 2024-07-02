@@ -6,7 +6,7 @@ export const MainPage = () => {
   return (
     <main className={styles.mainPage}>
       <div className={styles.wrapper}>
-        {/* <div className={styles.titleWrp}>
+        <div className={styles.titleWrp}>
           <h1 className={styles.title}>
             Discover DEX
             <br />
@@ -14,7 +14,7 @@ export const MainPage = () => {
           </h1>
           <div className={styles.aavault}>&lt;AAVAULT&gt;</div>
           <div className={styles.newWay}>NEW WAY</div>
-        </div> */}
+        </div>
 
         <div className={styles.info}>
           <div className={styles.content}>
@@ -25,7 +25,7 @@ export const MainPage = () => {
             trading tools available
           </div>
 
-          {/* <InteractiveBtn /> */}
+          <InteractiveBtn />
         </div>
       </div>
     </main>
