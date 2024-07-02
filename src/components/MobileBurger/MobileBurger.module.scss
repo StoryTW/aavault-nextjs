@@ -1,0 +1,40 @@
+.mobileNav {
+  max-width: 944px;
+
+  .wrapper {
+    padding: 24px 32px;
+    position: fixed;
+    top: 138px;
+    left: 0;
+    width: 100vw;
+    height: calc(100% - 138px);
+    z-index: 3;
+    background: #000000;
+
+    @include respond(mobileL) {
+      padding: 16px 12px;
+    }
+
+    .content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: end;
+
+      .btn_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #333333;
+        margin-bottom: 32px;
+
+        .bird {
+          @include respond(mobileL) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,10 +5,22 @@
     align-items: center;
     padding: 44px 0px;
 
+    @include respond(mobileL) {
+      padding: 32px 0px;
+    }
+
     .rightSide {
       display: flex;
       align-items: center;
       gap: 90px;
+
+      @include respond (laptopL) {
+        gap: 30px;
+      }
+
+      @include respond(laptopM) {
+        display: none;
+      }
     }
   }
 }

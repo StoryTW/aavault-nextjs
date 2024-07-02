@@ -9,9 +9,9 @@ type TButton = {
   variant?: 'black' | 'white'
 }
 
-export const ButtonLink: FC<TButtonLink> = ({ variant = 'black', href, children, ...props }) => {
+export const ButtonLink: FC<TButtonLink> = ({ variant = 'black', href, children, className, ...props }) => {
   return (
-    <Link className={clsx(styles.btnLink, styles[variant])} href={href} {...props}>
+    <Link className={clsx(styles.btnLink, styles[variant], className)} href={href} {...props}>
       {children}
     </Link>
   );

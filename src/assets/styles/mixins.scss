@@ -66,16 +66,31 @@
   line-height: normal;
 }
 
-@mixin Regular_16 {
-  font-size: 16px;
+@mixin mulish_1000_130 {
+  font-size: 130px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+  font-weight: 1000;
+  line-height: normal;
 }
 
-@mixin Regular_20 {
-  font-size: 20px;
+@mixin mulish_500_14 {
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24.2px;
+  font-weight: 500;
+  line-height: normal;
 }
+
+@mixin mulish_500_24 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@mixin mulish_700_24 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+

@@ -1,6 +1,5 @@
 .btnLink {
   border-radius: 8px;
-  background: var(--background-main);
   border: 1px solid var(--gray);
   display: flex;
   align-items: center;
@@ -16,5 +15,11 @@
   &.white {
     background: var(--white);
     color: var(--background-main);
+  }
+
+  &:hover {
+    background: #19F9C3;
+    color: var(--background-main);
+    @include transition;
   }
 }
