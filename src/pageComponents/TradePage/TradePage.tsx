@@ -6,7 +6,7 @@ export const TradePage = () => {
     <main className={styles.tradePage}>
       <h1 className={styles.title}>Soon.</h1>
 
-      {/* <div className={styles.robot} /> */}
+      <div className={styles.robot} />
     </main>
   );
 };

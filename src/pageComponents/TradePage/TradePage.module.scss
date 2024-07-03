@@ -39,32 +39,32 @@
     }
   }
 
-  // .robot {
-  //   background-image: url('/images/robot.png');
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   height: 882px;
-  //   width: 1100px;
-  //   position: absolute;
-  //   bottom: -100px;
-  //   right: -100px;
-  //   z-index: 1;
+  .robot {
+    background-image: url('/images/robot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 882px;
+    width: 1100px;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    z-index: 1;
 
-  //   @include respond(laptopXL) {
-  //     height: 582px;
-  //     width: 600px;
-  //     bottom: 0px;
-  //     right: 0px;
-  //   }
+    @include respond(laptopXL) {
+      height: 582px;
+      width: 600px;
+      bottom: 0px;
+      right: 0px;
+    }
 
-  //   @include respond(laptopM) {
-  //     height: 482px;
-  //     width: 500px;
-  //   }
+    @include respond(laptopM) {
+      height: 482px;
+      width: 500px;
+    }
 
-  //   @include respond(mobileL) {
-  //     height: 282px;
-  //     width: 280px;
-  //   }
-  // }
+    @include respond(mobileL) {
+      height: 282px;
+      width: 280px;
+    }
+  }
 }
