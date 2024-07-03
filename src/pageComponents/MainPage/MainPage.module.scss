@@ -14,7 +14,7 @@
     .titleWrp {
       display: flex;
       align-items: end;
-      margin-bottom: 224px;
+      margin-bottom: 200px;
       flex-wrap: wrap;
 
       @include respond(mobileL) {
@@ -23,7 +23,7 @@
 
       .title {
         @include mulish_1000_130;
-        font-size: 116px;
+        font-size: 100px;
         text-transform: uppercase;
         color: var(--white);
 
@@ -40,7 +40,7 @@
         @include mulish_500_14;
         color: var(--gray);
         margin-right: 16px;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
 
         @include respond(laptopL) {
           padding-bottom: 40px;
@@ -57,7 +57,7 @@
         background: var(--gradient_green);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 116px;
+        font-size: 100px;
 
         @include respond(laptopL) {
           font-size: 72px;
