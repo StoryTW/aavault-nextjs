@@ -23,7 +23,7 @@
 
       .title {
         @include mulish_1000_130;
-        font-size: 124px;
+        font-size: 116px;
         text-transform: uppercase;
         color: var(--white);
 
@@ -57,6 +57,7 @@
         background: var(--gradient_green);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 116px;
 
         @include respond(laptopL) {
           font-size: 72px;
