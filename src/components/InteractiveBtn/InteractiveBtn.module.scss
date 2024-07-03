@@ -3,15 +3,15 @@
   align-items: center;
   gap: 8px;
 
-  .block {
+  .input {
     padding: 22px 48px;
     border-radius: 4px;
     border: 1px solid var(--gray);
     color: var(--white);
     @include mulish_700_24;
     width: 100%;
-    text-align: center;
-
+    background: var(--background-main);
+    
     @include respond(laptopL) {
       @include mulish_700_18;
       padding: 16px;
