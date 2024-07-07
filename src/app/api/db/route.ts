@@ -4,9 +4,13 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest, res: NextResponse) {
   await dbConnect();
-  const email = (await req.json()).email;
+  try {
+    const email = (await req.json()).email;
 
-  const newDocEmail = await Email.create(req.body);
+    const newDocEmail = await Email.create(email);
 
-  return NextResponse.json(newDocEmail);
+    return NextResponse.json(newDocEmail);
+  } catch (error) {
+    console.log(error);
+  }
 }
