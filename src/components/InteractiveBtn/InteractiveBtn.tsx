@@ -7,14 +7,27 @@ export const InteractiveBtn = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleFocus = async () => {
-    await fetch('https://aavault.io/api/db', {
-      method: 'POST',
-      body: JSON.stringify({
-        email: inputRef.current?.value,
-      }),
-    });
     if (inputRef.current) {
-      inputRef.current.focus();
+      const email = inputRef.current.value;
+      console.log('Sending email:', email);
+
+      const response = await fetch('https://aavault.io/api/db', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        console.log('Email successfully saved');
+      } else {
+        console.error('Failed to save email:', response.statusText);
+      }
+
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
     }
   };
 
