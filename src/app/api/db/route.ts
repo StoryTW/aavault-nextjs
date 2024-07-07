@@ -1,11 +1,12 @@
 import dbConnect from "@/app/lib/dbConnection";
 import Email from "@/app/models/Email";
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {    
-    dbConnect();
+export async function POST(req: NextRequest, res: NextResponse) {    
+    await dbConnect();
 
     const email = await Email.create(req.body);
-    res.status(200).json(email);
+
+    return NextResponse.json(email);
 }
