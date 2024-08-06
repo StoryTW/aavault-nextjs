@@ -3,6 +3,7 @@ import { Mulish } from 'next/font/google';
 import '@/assets/styles/index.scss';
 import { ReactNode } from 'react';
 import { Header } from '@/layout/Header/Header';
+import { Footer } from '@/layout/Footer/Footer';
 
 const mulish = Mulish({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <div className='container'>
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
