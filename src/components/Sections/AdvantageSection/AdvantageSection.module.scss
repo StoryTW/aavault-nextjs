@@ -1,9 +1,11 @@
 .advantage {
+  margin-bottom: 280px;
+
   .title {
     @include mulish_1000_64;
     color: var(--white);
     margin-bottom: 80px;
-    max-width: 670px;
+    max-width: 940px;
     text-transform: uppercase;
 
     span {
@@ -15,6 +17,32 @@
   }
 
   .wrapper {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(8, minmax(100px, 236px));
+    grid-template-areas:
+      '. . tools tools tools conv conv conv'
+      'speed speed speed safety safety safety safety safety';
 
+    .card {
+      border-radius: 8px;
+      border: 1px solid var(--gray_3);
+
+      .cardWrapper {
+        padding: 36px;
+
+        .cardTitle {
+          @include mulish_1000_32;
+          color: var(--white);
+          margin-bottom: 16px;
+        }
+
+        .cardDescription {
+          @include mulish_500_18;
+          color: var(--gray_2);
+          margin-bottom: 32px;
+        }
+      }
+    }
   }
 }
