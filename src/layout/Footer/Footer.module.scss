@@ -1,0 +1,48 @@
+.footer {
+  border-top: 1px solid var(--gray_3);
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: minmax(100px, 446px) minmax(100px, 739px) minmax(100px, 600px);
+
+    .logoBlock {
+      border-right: 1px solid var(--gray_3);
+      padding: 80px 36px 80px 0px;
+
+      .logo {
+        justify-content: start;
+        margin-bottom: 102px;
+      }
+    }
+
+    .emailBlock {
+      border-right: 1px solid var(--gray_3);
+      padding: 80px 24px;
+
+      .title {
+        @include mulish_1000_64;
+        color: var(--white);
+        margin-bottom: 60px;
+        text-transform: uppercase;
+
+        span {
+          text-transform: uppercase;
+          background: var(--gradient_green);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .navBlock {
+      padding: 80px 0px 80px 34px;
+
+      .nav {
+        margin-bottom: 72px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 177px;
+      }
+    }
+  }
+}

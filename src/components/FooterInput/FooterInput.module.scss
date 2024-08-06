@@ -1,0 +1,37 @@
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .input {
+    padding: 22px 28px;
+    border-radius: 4px;
+    border: 1px solid var(--gray);
+    color: var(--white);
+    @include mulish_500_24;
+    width: 100%;
+    background: var(--background-main);
+  }
+
+  .btn {
+    color: var(--white);
+    padding: 24px;
+    background: var(--gradient_green);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    svg {
+      color: var(--white);
+      @include transition;
+    }
+
+    &:hover {
+      svg {
+        color: var(--background-main);
+      }
+    }
+  }
+}
