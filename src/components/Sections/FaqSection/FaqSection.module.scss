@@ -1,0 +1,23 @@
+.faq {
+  .title {
+    @include mulish_1000_64;
+    color: var(--white);
+    margin-bottom: 80px;
+    max-width: 670px;
+    text-transform: uppercase;
+
+    span {
+      text-transform: uppercase;
+      background: var(--gradient_green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 446px));
+    grid-template-rows: minmax(200px, 420px);
+    gap: 24px;
+  }
+}

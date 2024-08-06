@@ -1,0 +1,32 @@
+.card {
+  border: 1px solid var(--gray_3);
+  border-radius: 8px;
+
+  .wrapper {
+    height: 100%;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .id {
+      @include mulish_500_14;
+      color: var(--gray_4);
+      display: flex;
+      justify-content: end;
+    }
+
+    .content {
+      .question {
+        @include mulish_1000_32;
+        color: var(--white);
+      }
+
+      .answer {
+        @include mulish_500_18;
+        padding-top: 16px;
+        color: var(--gray_5);
+      }
+    }
+  }
+}

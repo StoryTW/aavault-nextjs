@@ -1,0 +1,59 @@
+.greetings {
+  margin-bottom: 280px;
+  border-top: 1px solid var(--gray_3);
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 458px) minmax(536px, 536px) 1fr;
+    grid-template-rows: minmax(200px, 581px);
+
+    .about {
+      padding: 48px 44px 0px 0px;
+      border-right: 1px solid var(--gray_3);
+
+      .caption {
+        margin-bottom: 124px;
+
+        @include mulish_500_14;
+        color: var(--gray);
+      }
+
+      .title {
+        @include mulish_1000_32;
+        color: var(--white);
+        text-transform: uppercase;
+
+        span {
+          text-transform: uppercase;
+          background: var(--gradient_green);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .robot {
+      border-right: 1px solid var(--gray_3);
+
+      .robotWrapper {
+        padding: 40px 54px;
+      }
+    }
+
+    .description {
+      .descriptionWrapper {
+        padding: 194px 128px 0px 24px;
+
+        .text {
+          @include mulish_500_18;
+          color: var(--gray_2);
+          margin-bottom: 56px;
+        }
+
+        .link {
+          width: max-content;
+        }
+      }
+    }
+  }
+}

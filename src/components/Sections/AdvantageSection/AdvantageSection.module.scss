@@ -1,0 +1,20 @@
+.advantage {
+  .title {
+    @include mulish_1000_64;
+    color: var(--white);
+    margin-bottom: 80px;
+    max-width: 670px;
+    text-transform: uppercase;
+
+    span {
+      text-transform: uppercase;
+      background: var(--gradient_green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .wrapper {
+
+  }
+}
