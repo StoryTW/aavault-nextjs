@@ -3,6 +3,7 @@ import styles from './Footer.module.scss';
 import { Logo } from '@/components/Logo/Logo';
 import { FooterInput } from '@/components/FooterInput/FooterInput';
 import Link from 'next/link';
+import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 
 const NAV_DATA = [
   {
@@ -40,12 +41,23 @@ export const Footer = () => {
           <nav className={styles.nav}>
             {NAV_DATA.map((item, index) => {
               return (
-                <Link href={item.link} key={index}>
+                <Link href={item.link} key={index} className={styles.link}>
                   {item.name}
                 </Link>
               );
             })}
           </nav>
+          <div className={styles.socials}>
+            <ButtonLink href={'/'}>
+              Tw
+            </ButtonLink>
+            <ButtonLink href={'/'}>
+              Tlg
+            </ButtonLink>
+            <ButtonLink href={'/'}>
+              Dis
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </footer>

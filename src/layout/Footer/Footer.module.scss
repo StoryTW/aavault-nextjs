@@ -41,7 +41,19 @@
         margin-bottom: 72px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 177px;
+        gap: 8px 177px;
+
+        .link {
+          @include mulish_600_20;
+          color: var(--gray_5);
+          text-transform: uppercase;
+        }
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
       }
     }
   }
