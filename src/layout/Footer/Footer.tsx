@@ -4,6 +4,7 @@ import { Logo } from '@/components/Logo/Logo';
 import { FooterInput } from '@/components/FooterInput/FooterInput';
 import Link from 'next/link';
 import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
+import { Socials } from '@/components/Socials/Socials';
 
 const NAV_DATA = [
   {
@@ -47,17 +48,7 @@ export const Footer = () => {
               );
             })}
           </nav>
-          <div className={styles.socials}>
-            <ButtonLink href={'/'}>
-              Tw
-            </ButtonLink>
-            <ButtonLink href={'/'}>
-              Tlg
-            </ButtonLink>
-            <ButtonLink href={'/'}>
-              Dis
-            </ButtonLink>
-          </div>
+          <Socials />
         </div>
       </div>
     </footer>
