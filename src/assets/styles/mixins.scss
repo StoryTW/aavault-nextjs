@@ -58,6 +58,20 @@
   transition: all 0.3s ease;
 }
 
+@mixin gradientText {
+  background: var(--gradient_green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin noScrollBar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 //FONTS
 @mixin mulish_700_18 {
   font-size: 18px;
@@ -84,6 +98,13 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 1000;
+  line-height: normal;
+}
+
+@mixin mulish_600_18 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -117,6 +138,13 @@
 
 @mixin mulish_700_24 {
   font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin mulish_700_16 {
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

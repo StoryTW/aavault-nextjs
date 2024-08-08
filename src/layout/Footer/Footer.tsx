@@ -3,7 +3,6 @@ import styles from './Footer.module.scss';
 import { Logo } from '@/components/Logo/Logo';
 import { FooterInput } from '@/components/FooterInput/FooterInput';
 import Link from 'next/link';
-import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 import { Socials } from '@/components/Socials/Socials';
 
 const NAV_DATA = [

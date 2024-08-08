@@ -1,0 +1,100 @@
+.card {
+  background: #191919;
+  border-radius: 8px;
+
+  &.private {
+    border-left: 5px solid #19f9d1;
+  }
+
+  &.marketing {
+    border-left: 5px solid #19f99b;
+  }
+
+  &.dao {
+    border-left: 5px solid #1ff634;
+  }
+
+  &.liquidity {
+    border-left: 5px solid #7cfb89;
+  }
+
+  &.seria {
+    border-left: 5px solid #29d93b;
+  }
+
+  &.reserves {
+    border-left: 5px solid #07fa94;
+  }
+
+  &.airdrop {
+    border-left: 5px solid #19f99b;
+  }
+
+  &.foundations {
+    border-left: 5px solid #0cb990;
+  }
+
+  &.team {
+    border-left: 5px solid #0cb990;
+  }
+
+  .wrapper {
+    padding: 10px 24px 10px 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nameInfo {
+      .name {
+        @include mulish_600_18;
+        color: var(--white);
+        margin-bottom: 7px;
+      }
+
+      .percent {
+        @include mulish_700_16;
+
+        &.private {
+          color: #1ff668;
+        }
+  
+        &.marketing {
+          color: #07fa94;
+        }
+  
+        &.dao {
+          color: #0cb990;
+        }
+  
+        &.liquidity {
+          color: #19f9f9;
+        }
+  
+        &.seria {
+          color: #19f9f9;
+        }
+  
+        &.reserves {
+          color: #1ff668;
+        }
+  
+        &.airdrop {
+          color: #19f9f9;
+        }
+  
+        &.foundations {
+          color: #0cb990;
+        }
+  
+        &.team {
+          color: #07fa94;
+        }
+      }
+    }
+
+    .count {
+      @include mulish_500_18;
+      color: var(--gray_2);
+    }
+  }
+}
