@@ -5,6 +5,7 @@ import { FaqSection } from '@/components/Sections/FaqSection/FaqSection';
 import { GreetingsSection } from '@/components/Sections/GreetingsSection/GreetingsSection';
 import { AdvantageSection } from '@/components/Sections/AdvantageSection/AdvantageSection';
 import { NativeCurrencySection } from '@/components/Sections/NativeCurrencySection/NativeCurrencySection';
+import { AavaultSection } from '@/components/Sections/AavaultSection/AavaultSection';
 
 export const MainPage = () => {
   return (
@@ -15,7 +16,7 @@ export const MainPage = () => {
 
       <AdvantageSection />
 
-      {/* <AavaultSection/>  */}
+      <AavaultSection /> 
 
       <NativeCurrencySection />
 
