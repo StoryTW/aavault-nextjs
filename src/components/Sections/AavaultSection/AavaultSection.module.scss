@@ -2,10 +2,15 @@
   .wrapper {
     height: 2000px;
 
-    .text {
-      font-size: 20px; 
-      color: var(--white);
-      transition: transform 0.1s ease-in-out;
+    .textWrapper {
+      display: flex;
+      justify-content: center;
+      
+      .text {
+        text-transform: uppercase;
+        @include mulish_1000_64;
+        @include gradientText;
+      }
     }
   }
 }

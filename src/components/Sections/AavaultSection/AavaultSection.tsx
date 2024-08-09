@@ -1,34 +1,23 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import styles from './AavaultSection.module.scss';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export const AavaultSection = () => {
-  const [scale, setScale] = useState(1);
+  const ref = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const newSize = 1 + scrollPosition / 1000; 
-      setScale(newSize); 
-    };
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const fontSize = useTransform(scrollYProgress, [0, 1], ['32px', '336px']);
 
   return (
-    <section className={styles.aavaultSection}>
+    <section className={styles.aavaultSection} ref={ref}>
       <div className={styles.wrapper}>
-        <div
-          className={styles.text}
-          style={{
-            transform: `scale(${scale})`,
-          }}
-        >
-          AAVAULT
+        <div className={styles.textWrapper}>
+          <motion.span className={styles.text} style={{ fontSize }}>AAVAULT</motion.span>
         </div>
       </div>
     </section>

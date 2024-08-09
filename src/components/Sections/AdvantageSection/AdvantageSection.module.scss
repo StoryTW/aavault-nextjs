@@ -10,9 +10,7 @@
 
     span {
       text-transform: uppercase;
-      background: var(--gradient_green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradientText;
     }
   }
 
@@ -41,6 +39,16 @@
           @include mulish_500_18;
           color: var(--gray_2);
           margin-bottom: 32px;
+        }
+
+        .cardVideo {
+          max-width: 1001;
+          max-height: 397px;
+
+          .video {
+            object-fit: fill;
+            max-height: 397px;
+          }
         }
       }
     }
