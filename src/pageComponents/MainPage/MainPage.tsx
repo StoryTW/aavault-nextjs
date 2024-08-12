@@ -12,7 +12,7 @@ export const MainPage = () => {
     <main className={styles.mainPage}>
       {/* <MainSection /> */}
 
-      {/* <GreetingsSection /> */}
+      <GreetingsSection />
 
       {/* <AdvantageSection /> */}
 

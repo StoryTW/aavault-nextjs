@@ -2,26 +2,67 @@
   margin-bottom: 280px;
   border-top: 1px solid var(--gray_3);
 
+  @include respond(laptopM) {
+    border-top: none;
+    margin-bottom: 120px;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 458px) minmax(536px, 536px) 1fr;
     grid-template-rows: minmax(200px, 581px);
+    grid-template-areas: 'about robot description';
+
+    @include respond(laptopXL) {
+      grid-template-columns: minmax(427px, 427px) minmax(200px, 458px) 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        'about about about'
+        'robot description description';
+    }
+
+    @include respond(laptopM) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'about'
+        'robot'
+        'description';
+    }
 
     .about {
+      grid-area: about;
       padding: 48px 44px 0px 0px;
       border-right: 1px solid var(--gray_3);
+
+      @include respond(laptopXL) {
+        border-right: none;
+        padding: 48px 0px 0px;
+      }
+
+      @include respond(laptopM) {
+        padding-bottom: 36px;
+        border-bottom: 1px solid var(--gray_3);
+      }
 
       .caption {
         margin-bottom: 124px;
 
         @include mulish_500_14;
         color: var(--gray);
+
+        @include respond(laptopXL) {
+          margin-bottom: 16px;
+        }
       }
 
       .title {
         @include mulish_1000_32;
         color: var(--white);
         text-transform: uppercase;
+
+        @include respond(laptopM) {
+          @include mulish_1000_28;
+        }
 
         span {
           text-transform: uppercase;
@@ -33,25 +74,71 @@
     }
 
     .robot {
+      grid-area: robot;
       border-right: 1px solid var(--gray_3);
 
+      @include respond(laptopXL) {
+        border-right: none;
+        display: flex;
+        justify-content: center;
+      }
+
       .robotWrapper {
-        padding: 40px 54px;
+        margin: 40px 54px;
+        max-width: 427px;
+        max-height: 510px;
+        width: 427px;
+        height: 510px;
+
+        @include respond(laptopXL) {
+          margin: 40px 0px 40px;
+        }
+
+        @include respond(laptopM) {
+          max-width: 197px;
+          max-height: 232px;
+          width: 197px;
+          height: 232px;
+        }
       }
     }
 
     .description {
+      grid-area: description;
+
+      @include respond(laptopM) {
+        border-top: 1px solid var(--gray_3);
+      }
+
       .descriptionWrapper {
         padding: 194px 128px 0px 24px;
+
+        @include respond(laptopXL) {
+          padding: 194px 0px 0px;
+        }
+
+        @include respond(laptopM) {
+          padding: 36px 0px 0px;
+        }
 
         .text {
           @include mulish_500_18;
           color: var(--gray_2);
           margin-bottom: 56px;
+
+          @include respond(laptopM) {
+            @include mulish_500_16;
+            margin-bottom: 32px;
+          }
         }
 
         .link {
           width: max-content;
+
+          @include respond(laptopM) {
+            width: 100%;
+            justify-content: center;
+          }
         }
       }
     }

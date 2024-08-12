@@ -15,7 +15,7 @@ export const GreetingsSection = () => {
         </div>
         <div className={styles.robot}>
           <div className={styles.robotWrapper}>
-            <Image src='/images/robot_section.png' height={510} width={427} alt='robot' />
+            <Image src='/images/robot_section.png' height={510} width={427} alt='robot' layout='responsive' />
           </div>
         </div>
         <div className={styles.description}>
