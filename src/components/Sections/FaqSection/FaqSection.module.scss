@@ -1,6 +1,10 @@
 .faq {
   margin-bottom: 280px;
 
+  @include respond(laptopM) {
+    margin-bottom: 120px;
+  }
+
   .title {
     @include mulish_1000_64;
     color: var(--white);
@@ -8,11 +12,14 @@
     max-width: 670px;
     text-transform: uppercase;
 
+    @include respond(laptopM) {
+      @include mulish_1000_28;
+      margin-bottom: 36px;
+    }
+
     span {
       text-transform: uppercase;
-      background: var(--gradient_green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradientText;
     }
   }
 
@@ -21,5 +28,10 @@
     grid-template-columns: repeat(4, minmax(200px, 446px));
     grid-template-rows: minmax(200px, 420px);
     gap: 24px;
+
+    @include respond(laptop1200) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(200px, 420px) minmax(200px, 420px);
+    }
   }
 }

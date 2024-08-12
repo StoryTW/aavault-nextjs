@@ -45,9 +45,7 @@
     .newWay {
       @include mulish_1000_130;
       text-transform: uppercase;
-      background: var(--gradient_green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradientText;
       font-size: 100px;
 
       @include respond(laptopL) {

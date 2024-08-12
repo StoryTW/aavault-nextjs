@@ -10,11 +10,11 @@ import { AavaultSection } from '@/components/Sections/AavaultSection/AavaultSect
 export const MainPage = () => {
   return (
     <main className={styles.mainPage}>
-      {/* <MainSection /> */}
+      <MainSection />
 
       <GreetingsSection />
 
-      {/* <AdvantageSection /> */}
+      <AdvantageSection />
 
       {/* <AavaultSection />  */}
 

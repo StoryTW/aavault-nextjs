@@ -15,9 +15,7 @@
     @include mulish_1000_130;
     color: var(--white);
     text-transform: uppercase;
-    background: var(--gradient_green);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradientText;
     text-align: center;
     margin-bottom: 24px;
 
