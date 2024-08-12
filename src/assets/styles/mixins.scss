@@ -6,6 +6,12 @@
     }
   }
 
+  @if $breakpoint == laptop1200 {
+    @media only screen and (width <= 1290px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == laptopL {
     @media only screen and (width <= 1024px) {
       @content;
@@ -73,6 +79,13 @@
 }
 
 //FONTS
+@mixin mulish_700_14 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @mixin mulish_700_18 {
   font-size: 18px;
   font-style: normal;

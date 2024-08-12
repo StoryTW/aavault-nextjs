@@ -1,22 +1,46 @@
 .nativeCurrency {
   margin-bottom: 280px;
 
+  @include respond(laptopM) {
+    margin-bottom: 120px;
+  }
+
   .header {
     display: grid;
     grid-template-columns: minmax(100px, 470px) minmax(100px, 658px) minmax(100px, 629px);
     margin-bottom: 24px;
+
+    @include respond(laptopXL) {
+      grid-template-columns: 1fr;
+    }
+
+    @include respond(laptopM) {
+    }
 
     .caption {
       @include mulish_500_14;
       color: var(--gray);
       text-transform: uppercase;
       padding-top: 10px;
+
+      @include respond(laptopXL) {
+        padding-top: 0px;
+        margin-bottom: 12px;
+      }
     }
 
     .title {
       @include mulish_1000_64;
       color: var(--white);
       text-transform: uppercase;
+
+      @include respond(laptopXL) {
+        margin-bottom: 24px;
+      }
+
+      @include respond(laptopM) {
+        @include mulish_1000_28;
+      }
 
       span {
         text-transform: uppercase;
@@ -27,6 +51,10 @@
     .description {
       @include mulish_500_18;
       color: var(--gray_2);
+
+      @include respond(laptopM) {
+        @include mulish_500_16;
+      }
     }
   }
 
@@ -36,15 +64,66 @@
     grid-template-columns: minmax(100px, 524px) 1fr;
     gap: 180px;
 
+    @include respond(laptopXL) {
+      padding-left: 0px;
+      gap: 36px;
+    }
+
+    @include respond(laptopL) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
     .list {
       max-height: 610px;
       overflow: scroll;
       @include noScrollBar;
+      width: 100%;
+
+      @include respond(laptopM) {
+        max-height: 576px;
+      }
 
       li {
         &:not(:last-child) {
           margin-bottom: 32px;
         }
+      }
+    }
+
+    .image {
+      max-width: 629px;
+      max-height: 629px;
+      height: 629px;
+      width: 629px;
+
+      @include respond(laptop1200) {
+        max-width: 529px;
+        max-height: 529px;
+        height: 529px;
+        width: 529px;
+      }
+
+      @include respond(laptopL) {
+        max-width: 429px;
+        max-height: 429px;
+        height: 429px;
+        width: 429px;
+      }
+
+      @include respond(mobileL) {
+        max-width: 336px;
+        max-height: 336px;
+        height: 336px;
+        width: 336px;
+      }
+
+      @include respond(mobile) {
+        max-width: 300px;
+        max-height: 300px;
+        height: 300px;
+        width: 300px;
       }
     }
   }

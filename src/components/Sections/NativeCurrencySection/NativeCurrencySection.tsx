@@ -90,7 +90,7 @@ export const NativeCurrencySection = () => {
           })}
         </ul>
         <div className={styles.image}>
-          <Image src={'/images/circle.png'} width={629} height={629} alt='diagram' />
+          <Image src={'/images/circle.png'} width={629} height={629} alt='diagram' layout='responsive' />
         </div>
       </div>
     </section>

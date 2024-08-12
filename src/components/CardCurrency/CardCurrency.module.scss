@@ -49,10 +49,18 @@
         @include mulish_600_18;
         color: var(--white);
         margin-bottom: 7px;
+
+        @include respond(laptopM) {
+          @include mulish_600_16;
+        }
       }
 
       .percent {
         @include mulish_700_16;
+
+        @include respond(laptopM) {
+          @include mulish_700_14;
+        }
 
         &.private {
           color: #1ff668;
