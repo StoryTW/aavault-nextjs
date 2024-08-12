@@ -3,6 +3,10 @@
   align-items: center;
   gap: 16px;
 
+  @include respond(laptopM) {
+    gap: 12px;
+  }
+
   .input {
     padding: 22px 28px;
     border-radius: 4px;
@@ -11,6 +15,11 @@
     @include mulish_500_24;
     width: 100%;
     background: var(--background-main);
+
+    @include respond(laptopM) {
+      @include mulish_600_16;
+      padding: 15px;
+    }
   }
 
   .btn {
@@ -22,6 +31,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+
+    @include respond(laptopM) {
+      padding: 12px;
+    }
 
     svg {
       color: var(--white);

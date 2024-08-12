@@ -48,6 +48,18 @@ export const Footer = () => {
             })}
           </nav>
           <Socials />
+
+          <div className={styles.textBlock}>
+            <div className={styles.text}>
+              &lt;PRIVACY POLICY&gt;
+            </div>
+            <div className={styles.text}>
+              &lt;SECURITY POLICY&gt;
+            </div>
+            <div className={styles.text}>
+              &lt;COOKIES POLICY&gt;
+            </div>
+          </div>
         </div>
       </div>
     </footer>

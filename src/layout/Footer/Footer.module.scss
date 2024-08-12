@@ -4,26 +4,66 @@
   .wrapper {
     display: grid;
     grid-template-columns: minmax(100px, 446px) minmax(100px, 739px) minmax(100px, 600px);
+    grid-template-areas: 'logo email nav';
+
+    @include respond(laptopXL) {
+      grid-template-areas:
+        'email email email'
+        'logo nav nav';
+    }
+
+    @include respond(laptopM) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'email'
+        'logo'
+        'nav';
+    }
 
     .logoBlock {
+      grid-area: logo;
       border-right: 1px solid var(--gray_3);
       padding: 80px 36px 80px 0px;
+
+      @include respond(laptopM) {
+        border-right: none;
+        padding: 80px 0px 0px;
+      }
 
       .logo {
         justify-content: start;
         margin-bottom: 102px;
+
+        @include respond(laptopM) {
+          margin-bottom: 0px;
+        }
       }
     }
 
     .emailBlock {
+      grid-area: email;
       border-right: 1px solid var(--gray_3);
       padding: 80px 24px;
+
+      @include respond(laptopXL) {
+        border-right: none;
+        border-bottom: 1px solid var(--gray_3);
+      }
+
+      @include respond(laptopM) {
+        padding: 64px 0px;
+      }
 
       .title {
         @include mulish_1000_64;
         color: var(--white);
         margin-bottom: 60px;
         text-transform: uppercase;
+
+        @include respond(laptopM) {
+          @include mulish_1000_28;
+          margin-bottom: 36px;
+        }
 
         span {
           text-transform: uppercase;
@@ -35,13 +75,23 @@
     }
 
     .navBlock {
+      grid-area: nav;
       padding: 80px 0px 80px 34px;
+
+      @include respond(laptopM) {
+        padding: 36px 0px 88px;
+      }
 
       .nav {
         margin-bottom: 72px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 8px 177px;
+
+        @include respond(laptopM) {
+          gap: 8px 36px;
+          // margin-bottom: 36px;
+        }
 
         .link {
           @include mulish_600_20;
@@ -54,6 +104,22 @@
         display: flex;
         align-items: center;
         gap: 16px;
+      }
+
+      .textBlock {
+        display: none;
+
+        @include respond(laptopM) {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px 30px;
+          margin-top: 30px;
+        }
+
+        .text {
+          @include mulish_600_18;
+          color: var(--gray_6);
+        }
       }
     }
   }
