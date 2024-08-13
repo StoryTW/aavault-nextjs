@@ -6,6 +6,7 @@ import { Socials } from '@/components/Socials/Socials';
 import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 import { Burger } from '@/components/ui/Burger/Burger';
 import { MobileBurger } from '@/components/MobileBurger/MobileBurger';
+import { Navbar } from './Navbar/Navbar';
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -17,7 +18,11 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
-        <Logo />
+        <div className={styles.leftSide}>
+          <Logo />
+
+          <Navbar />
+        </div>
 
         <div className={styles.rightSide}>
           <Socials />

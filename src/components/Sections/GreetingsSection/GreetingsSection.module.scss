@@ -121,10 +121,11 @@
 
         .text {
           @include mulish_500_18;
-          color: var(--gray_2);
+          color: var(--gray_5);
           margin-bottom: 56px;
 
           @include respond(laptopM) {
+            display: none;
             @include mulish_500_16;
             margin-bottom: 32px;
           }

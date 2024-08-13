@@ -30,6 +30,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "postcss": "^8.4.39",
     "prettier": "^3.3.2",
+    "react-remove-scroll": "^2.5.10",
     "sass": "^1.77.6",
     "typescript": "^5"
   }

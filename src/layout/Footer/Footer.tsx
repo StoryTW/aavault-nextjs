@@ -5,7 +5,7 @@ import { FooterInput } from '@/components/FooterInput/FooterInput';
 import Link from 'next/link';
 import { Socials } from '@/components/Socials/Socials';
 
-const NAV_DATA = [
+export const NAV_DATA = [
   {
     link: '#about',
     name: 'About Us',

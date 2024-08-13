@@ -9,10 +9,28 @@
       padding: 32px 0px;
     }
 
+    .leftSide {
+      display: grid;
+      grid-template-columns: minmax(100px, 213px) minmax(100px, 428px);
+      gap: 267px;
+
+      @media only screen and (width <= 1600px) {
+        gap: 36px;
+      }
+
+      @include respond(laptop1200) {
+        display: block;
+      }
+    }
+
     .rightSide {
       display: flex;
       align-items: center;
       gap: 90px;
+
+      @media only screen and (width <= 1600px) {
+        gap: 30px;
+      }
 
       @include respond (laptopL) {
         gap: 30px;

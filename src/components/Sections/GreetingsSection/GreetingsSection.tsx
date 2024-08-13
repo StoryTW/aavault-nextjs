@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './GreetingsSection.module.scss';
 import Image from 'next/image';
 import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
+import { GreetingsMobileText } from '@/components/GreetingsMobileText/GreetingsMobileText';
 
 export const GreetingsSection = () => {
   return (
@@ -30,6 +31,8 @@ export const GreetingsSection = () => {
               world. My mission is to change the DEX trading industry by allowing everyone to buy
               tokens securely, quickly and conveniently without hassle
             </div>
+
+            <GreetingsMobileText />
 
             <ButtonLink href={'/'} className={styles.link}>CHECK WHITEPAPER</ButtonLink>
           </div>

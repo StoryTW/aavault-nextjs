@@ -1,0 +1,21 @@
+.navbar {
+  @include respond(laptop1200) {
+    display: none;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 180px;
+
+    @media only screen and (width <= 1600px) {
+      gap: 12px 36px;
+    }
+  }
+
+  .link {
+    @include mulish_600_20;
+    color: var(--gray_5);
+    text-transform: uppercase;
+  }
+}

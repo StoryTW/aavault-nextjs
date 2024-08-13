@@ -1,0 +1,48 @@
+.mobile {
+  display: none;
+
+  @include respond(laptopM) {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    @include mulish_500_16;
+    color: var(--gray_5);
+    text-indent: 88px;
+  }
+
+  .showedText {
+    @include mulish_500_16;
+    color: var(--gray_5);
+    text-indent: 88px;
+  }
+
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .btn {
+      color: var(--gray);
+      @include mulish_500_16;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+  
+      &.open {
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+  
+      svg {
+        height: 11px;
+        width: 17px;
+        @include transition;
+      }
+    }
+  }
+
+}

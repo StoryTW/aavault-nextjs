@@ -10,7 +10,7 @@ interface IFaqSwiper {
 
 export const FaqSwiper: FC<IFaqSwiper> = ({ data }) => {
   return (
-    <Swiper modules={[Navigation]}>
+    <Swiper modules={[Navigation]} spaceBetween={16}>
       {data.map((card) => {
         return (
           <SwiperSlide key={card.id}>
