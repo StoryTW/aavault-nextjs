@@ -5,10 +5,10 @@ import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 
 export const GreetingsSection = () => {
   return (
-    <section className={styles.greetings}>
+    <section id='about' className={styles.greetings}>
       <div className={styles.wrapper}>
         <div className={styles.about}>
-          <div className={styles.caption}>&lt;ABOUT US&gt;</div>
+          <div className={styles.caption}>&lt; ABOUT US &gt;</div>
           <h2 className={styles.title}>
             Greetings! I AM <span>VAULT</span>. I am here to share my story with you
           </h2>

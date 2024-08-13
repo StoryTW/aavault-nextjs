@@ -5,23 +5,51 @@
     margin-bottom: 120px;
   }
 
-  .title {
-    @include mulish_1000_64;
-    color: var(--white);
-    margin-bottom: 80px;
-    max-width: 670px;
-    text-transform: uppercase;
+  .header {
+    display: grid;
+    grid-template-columns: minmax(100px, 470px) 1fr;
 
-    @include respond(laptopM) {
-      @include mulish_1000_28;
-      margin-bottom: 36px;
+    @media only screen and (width <= 1705px) {
+      grid-template-columns: minmax(100px, 270px) 1fr;
     }
 
-    span {
+    @include respond(laptopXL) {
+      grid-template-columns: 1fr;
+    }
+
+    .caption {
+      @include mulish_500_14;
+      color: var(--gray);
       text-transform: uppercase;
-      @include gradientText;
+      padding-top: 10px;
+
+      @include respond(laptopXL) {
+        padding-top: 0px;
+        margin-bottom: 12px;
+      }
     }
+
+    .title {
+      @include mulish_1000_64;
+      color: var(--white);
+      margin-bottom: 80px;
+      max-width: 670px;
+      text-transform: uppercase;
+  
+      @include respond(laptopM) {
+        @include mulish_1000_28;
+        margin-bottom: 36px;
+      }
+  
+      span {
+        text-transform: uppercase;
+        @include gradientText;
+      }
+    }
+
   }
+
+
 
   .wrapper {
     display: grid;

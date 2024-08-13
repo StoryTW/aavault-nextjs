@@ -34,7 +34,7 @@ const DATA = [
 
 export const AdvantageSection = () => {
   return (
-    <section className={styles.advantage}>
+    <section id='benefits' className={styles.advantage}>
       <div className={styles.titleWrapper}>
         <div className={styles.caption}>
           &lt; Benefits &gt;

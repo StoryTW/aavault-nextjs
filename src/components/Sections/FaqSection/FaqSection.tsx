@@ -35,9 +35,12 @@ const DATA: IFaqModel[] = [
 export const FaqSection = () => {
   return (
     <section className={styles.faq}>
-      <h2 className={styles.title}>
-        FREQUENTLY ASKED <span>QUESTIONS</span>
-      </h2>
+      <div className={styles.header}>
+        <div className={styles.caption}>&lt; FAQ &gt;</div>
+        <h2 className={styles.title}>
+          FREQUENTLY ASKED <span>QUESTIONS</span>
+        </h2>
+      </div>
       <div className={styles.wrapper}>
         {DATA.map((card) => {
           return (

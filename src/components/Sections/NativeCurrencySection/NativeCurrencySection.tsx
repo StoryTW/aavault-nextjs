@@ -62,9 +62,9 @@ const DATA = [
 
 export const NativeCurrencySection = () => {
   return (
-    <section className={styles.nativeCurrency}>
+    <section id='tokenomics' className={styles.nativeCurrency}>
       <div className={styles.header}>
-        <div className={styles.caption}>&lt;Token and tokenomics&gt;</div>
+        <div className={styles.caption}>&lt; Token and tokenomics &gt;</div>
         <h2 className={styles.title}>
           AAVAULT IS THE NATIVE <span>currency</span>
         </h2>

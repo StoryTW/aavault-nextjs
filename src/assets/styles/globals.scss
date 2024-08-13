@@ -65,6 +65,8 @@ body {
   scrollbar-gutter: stable;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 dl,

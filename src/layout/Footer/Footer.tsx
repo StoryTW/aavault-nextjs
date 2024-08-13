@@ -7,19 +7,19 @@ import { Socials } from '@/components/Socials/Socials';
 
 const NAV_DATA = [
   {
-    link: '/',
+    link: '#about',
     name: 'About Us',
   },
   {
-    link: '/',
+    link: '#tokenomics',
     name: 'Tokenomics',
   },
   {
-    link: '/',
+    link: '#benefits',
     name: 'Benefits',
   },
   {
-    link: '/',
+    link: '#roadmap',
     name: 'Roadmap',
   },
 ];
@@ -51,13 +51,13 @@ export const Footer = () => {
 
           <div className={styles.textBlock}>
             <div className={styles.text}>
-              &lt;PRIVACY POLICY&gt;
+              &lt; PRIVACY POLICY &gt;
             </div>
             <div className={styles.text}>
-              &lt;SECURITY POLICY&gt;
+              &lt; SECURITY POLICY &gt;
             </div>
             <div className={styles.text}>
-              &lt;COOKIES POLICY&gt;
+              &lt; COOKIES POLICY &gt;
             </div>
           </div>
         </div>

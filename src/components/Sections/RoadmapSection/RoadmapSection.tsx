@@ -106,10 +106,10 @@ const DATA = [
 
 export const RoadmapSection = () => {
   return (
-    <section className={styles.section}>
+    <section id='roadmap' className={styles.section}>
       <div className={styles.titleWrapper}>
         <h2 className={styles.title}>ROADMAP</h2>
-        <span className={styles.caption}>&lt;2024-2025&gt;</span>
+        <span className={styles.caption}>&lt; 2024-2025 &gt;</span>
       </div>
       <div className={styles.content}>
         <div className={styles.wrapper}>
