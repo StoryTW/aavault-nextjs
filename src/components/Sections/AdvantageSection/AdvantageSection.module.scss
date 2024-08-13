@@ -5,21 +5,42 @@
     margin-bottom: 120px;
   }
 
-  .title {
-    @include mulish_1000_64;
-    color: var(--white);
-    margin-bottom: 80px;
-    max-width: 940px;
-    text-transform: uppercase;
+  .titleWrapper {
+    display: grid;
+    grid-template-columns: minmax(100px, 454px) 1fr;
 
-    @include respond(laptopM) {
-      @include mulish_1000_28;
-      margin-bottom: 36px;
+    @include respond(laptopXL) {
+      grid-template-columns: 1fr;
+      gap: 12px;
     }
 
-    span {
+    .caption {
+      @include mulish_500_14;
+      color: var(--gray);
       text-transform: uppercase;
-      @include gradientText;
+      padding-top: 10px;
+
+      @include respond(laptopXL) {
+        padding-top: 0px;
+      }
+    }
+
+    .title {
+      @include mulish_1000_64;
+      color: var(--white);
+      margin-bottom: 80px;
+      max-width: 940px;
+      text-transform: uppercase;
+
+      @include respond(laptopM) {
+        @include mulish_1000_28;
+        margin-bottom: 36px;
+      }
+
+      span {
+        text-transform: uppercase;
+        @include gradientText;
+      }
     }
   }
 
@@ -31,6 +52,22 @@
       '. . tools tools tools conv conv conv'
       'speed speed speed safety safety safety safety safety';
 
+    @include respond(laptopXL) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'tools conv'
+        'speed safety';
+    }
+
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'tools'
+        'conv'
+        'speed'
+        'safety';
+    }
+
     .card {
       border-radius: 8px;
       border: 1px solid var(--gray_3);
@@ -38,16 +75,29 @@
       .cardWrapper {
         padding: 36px;
 
+        @include respond(tablet) {
+          padding: 20px;
+        }
+
         .cardTitle {
           @include mulish_1000_32;
           color: var(--white);
           margin-bottom: 16px;
+          text-transform: uppercase;
+
+          @include respond(tablet) {
+            @include mulish_1000_20;
+          }
         }
 
         .cardDescription {
           @include mulish_500_18;
           color: var(--gray_2);
           margin-bottom: 32px;
+
+          @include respond(tablet) {
+            @include mulish_500_16;
+          }
         }
 
         .cardVideo {

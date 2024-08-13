@@ -1,8 +1,11 @@
+'use client';
 import React from 'react';
 import styles from './FaqSection.module.scss';
 import { CardFaq } from '@/components/CardFaq/CardFaq';
+import { FaqSwiper } from '@/components/FaqSwiper/FaqSwiper';
+import Image from 'next/image';
 
-const DATA = [
+const DATA: IFaqModel[] = [
   {
     id: '<01>',
     question: 'Is your platform secure?',
@@ -38,9 +41,23 @@ export const FaqSection = () => {
       <div className={styles.wrapper}>
         {DATA.map((card) => {
           return (
-            <CardFaq key={card.id} id={card.id} question={card.question} answer={card.answer} />
+            <CardFaq
+              key={card.id}
+              id={card.id}
+              question={card.question}
+              answer={card.answer}
+              withHoverEffect
+            />
           );
         })}
+      </div>
+
+      <div className={styles.swiperBlock}>
+        <FaqSwiper data={DATA} />
+
+        <div className={styles.iconSwipe}>
+          <Image src={'/images/icon-swipe.svg'} width={24} height={24} alt='icon-swipe' />
+        </div>
       </div>
     </section>
   );

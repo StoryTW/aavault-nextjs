@@ -35,9 +35,14 @@ const DATA = [
 export const AdvantageSection = () => {
   return (
     <section className={styles.advantage}>
-      <h2 className={styles.title}>
-        Discover the <span>advantages</span> of AAVAULT
-      </h2>
+      <div className={styles.titleWrapper}>
+        <div className={styles.caption}>
+          &lt; Benefits &gt;
+        </div>
+        <h2 className={styles.title}>
+          Discover the <span>advantages</span> of AAVAULT
+        </h2>
+      </div>
       <div className={styles.wrapper}>
         {DATA.map((card) => {
           return (

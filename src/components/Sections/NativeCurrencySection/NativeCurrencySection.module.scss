@@ -10,11 +10,12 @@
     grid-template-columns: minmax(100px, 470px) minmax(100px, 658px) minmax(100px, 629px);
     margin-bottom: 24px;
 
-    @include respond(laptopXL) {
-      grid-template-columns: 1fr;
+    @media only screen and (width <= 1705px) {
+      grid-template-columns: minmax(100px, 270px) minmax(100px, 658px) minmax(100px, 629px);
     }
 
-    @include respond(laptopM) {
+    @include respond(laptopXL) {
+      grid-template-columns: 1fr;
     }
 
     .caption {
@@ -61,8 +62,12 @@
   .content {
     padding-left: 480px;
     display: grid;
-    grid-template-columns: minmax(100px, 524px) 1fr;
+    grid-template-columns: minmax(300px, 524px) 1fr;
     gap: 180px;
+
+    @media only screen and (width <= 1705px) {
+      padding-left: 280px;
+    }
 
     @include respond(laptopXL) {
       padding-left: 0px;

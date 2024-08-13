@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { Mulish } from 'next/font/google';
-import '@/assets/styles/index.scss';
 import { ReactNode } from 'react';
 import { Header } from '@/layout/Header/Header';
 import { Footer } from '@/layout/Footer/Footer';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import '@/assets/styles/index.scss';
 
 const mulish = Mulish({ subsets: ['latin'] });
 

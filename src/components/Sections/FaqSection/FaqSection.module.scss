@@ -33,5 +33,24 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: minmax(200px, 420px) minmax(200px, 420px);
     }
+
+    @include respond(laptopM) {
+      display: none;
+    }
+  }
+
+  .swiperBlock {
+    display: none;
+
+    @include respond(laptopM) {
+      display: block;
+    }
+
+    .iconSwipe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 36px;
+    }
   }
 }

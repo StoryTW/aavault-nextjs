@@ -22,7 +22,7 @@ export const MainPage = () => {
 
       {/* <RoadmapSection /> */}
 
-      {/* <FaqSection /> */}
+      <FaqSection />
     </main>
   );
 };
