@@ -1,0 +1,78 @@
+.block {
+  position: relative;
+
+  .header {
+    position: relative;
+    z-index: 3;
+
+    .title {
+      @include gradientText;
+      display: inline-block;
+      @include mulish_900_34;
+      margin-bottom: 16px;
+    }
+
+    .circle {
+      position: absolute;
+      z-index: 4;
+      min-width: 16px;
+      min-height: 16px;
+      width: 16px;
+      height: 16px;
+      background: var(--gradient_green);
+      border-radius: 50%;
+      left: 64px;
+      bottom: -8px;
+    }
+  }
+
+  .containerBlock {
+    margin-left: 150px;
+    margin-right: 40px;
+  }
+
+  .contentBlock {
+    background-color: var(--bg_19);
+    padding: 16px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 260px;
+    min-width: 260px;
+    border: 1px solid var(--gray_3);
+  
+    .list {
+      @include mulish_500_18;
+      color: var(--white);
+  
+      li:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.dividerHeight {
+  width: 1px;
+  position: absolute;
+  z-index: 2;
+  left: 72px;
+}
+
+.circle2 {
+  position: absolute;
+  z-index: 3;
+  min-width: 16px;
+  min-height: 16px;
+  width: 16px;
+  height: 16px;
+  background: var(--gradient_green);
+  border-radius: 50%;
+  left: 64px;
+}
+
+.dividerWidth {
+  width: 79px !important;
+  position: absolute;
+  z-index: 2;
+  left: 72px;
+}

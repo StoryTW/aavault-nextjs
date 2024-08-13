@@ -79,20 +79,6 @@
 }
 
 //FONTS
-@mixin mulish_700_14 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-@mixin mulish_700_18 {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
 @mixin mulish_1000_130 {
   font-size: 130px;
   font-style: normal;
@@ -125,6 +111,27 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 1000;
+  line-height: normal;
+}
+
+@mixin mulish_900_34 {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+@mixin mulish_700_14 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin mulish_700_18 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
 }
 

@@ -5,10 +5,20 @@
     margin-bottom: 120px;
   }
 
-
   .title {
     @include mulish_1000_130;
     color: var(--white);
     margin-bottom: 80px;
+  }
+
+  .content {
+    overflow-x: scroll;
+    @include noScrollBar;
+
+    .wrapper {
+      .blocks {
+        display: flex;
+      }
+    }
   }
 }

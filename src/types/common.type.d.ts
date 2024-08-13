@@ -3,3 +3,7 @@ declare interface IFaqModel {
   question: string;
   answer: string;
 }
+
+declare interface IRoadmapDataList {
+  text: string;
+}
