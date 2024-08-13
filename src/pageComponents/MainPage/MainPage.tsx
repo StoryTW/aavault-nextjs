@@ -21,7 +21,7 @@ export const MainPage = () => {
 
       <NativeCurrencySection />
 
-      {/* <RoadmapSection /> */}
+      <RoadmapSection />
 
       <FaqSection />
     </main>

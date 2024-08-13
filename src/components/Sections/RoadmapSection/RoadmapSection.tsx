@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './RoadmapSection.module.scss';
 import { RoadmapBlock } from '@/components/RoadmapBlock/RoadmapBlock';
+import { RoadmapBlockMobile } from '@/components/RoadmapBlockMobile/RoadmapBlockMobile';
 
 const DATA = [
   {
@@ -8,6 +9,8 @@ const DATA = [
     title: 'Q2 2024',
     offset: 74,
     dividerHeight: 141,
+    leftOffset: 31,
+    circleHeight: 91,
     data: [
       {
         text: '< Alpha version >',
@@ -25,15 +28,17 @@ const DATA = [
     title: 'Q3 2024',
     offset: 186,
     dividerHeight: 253,
+    leftOffset: 61,
+    circleHeight: 94,
     data: [
       {
-        text: '< Full version launch >',
+        text: '< Demo version >',
       },
       {
         text: '< Marketing >',
       },
       {
-        text: '< Private round >',
+        text: '< Airdrop >',
       },
     ],
   },
@@ -42,18 +47,20 @@ const DATA = [
     title: 'Q4 2024',
     offset: 246,
     dividerHeight: 345,
+    leftOffset: 104,
+    circleHeight: 134,
     data: [
       {
         text: '< New blockchain integration >',
       },
       {
-        text: '< Mobile Version >',
+        text: '< Full version >',
       },
       {
         text: '< Listings On CMC And CoinGecko >',
       },
       {
-        text: '< Round A >',
+        text: '< Tournaments >',
       },
     ],
   },
@@ -62,9 +69,14 @@ const DATA = [
     title: 'Q1 2025',
     offset: 213,
     dividerHeight: 261,
+    leftOffset: 61,
+    circleHeight: 90,
     data: [
       {
         text: '< DEX and CEX listings >',
+      },
+      {
+        text: '< Staking >',
       },
       {
         text: '< New blockchain integration >',
@@ -76,12 +88,17 @@ const DATA = [
     title: 'Q2 2025',
     offset: 93,
     dividerHeight: 154,
+    leftOffset: 31,
+    circleHeight: 90,
     data: [
       {
-        text: '< Further blockchain integration >',
+        text: '< Mobile version >',
       },
       {
-        text: '< Staking >',
+        text: '< NFT marketplace >',
+      },
+      {
+        text: '< Apps >',
       },
     ],
   },
@@ -90,23 +107,38 @@ const DATA = [
 export const RoadmapSection = () => {
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>ROADMAP</h2>
+      <div className={styles.titleWrapper}>
+        <h2 className={styles.title}>ROADMAP</h2>
+        <span className={styles.caption}>&lt;2024-2025&gt;</span>
+      </div>
       <div className={styles.content}>
         <div className={styles.wrapper}>
-          <div className={styles.blocks}>
-            {DATA.map((block) => {
-              return (
-                <RoadmapBlock
-                  key={block.id}
-                  title={block.title}
-                  dividerHeight={block.dividerHeight}
-                  dataList={block.data}
-                  offset={block.offset}
-                />
-              );
-            })}
-          </div>
+          {DATA.map((block) => {
+            return (
+              <RoadmapBlock
+                key={block.id}
+                title={block.title}
+                dividerHeight={block.dividerHeight}
+                dataList={block.data}
+                offset={block.offset}
+              />
+            );
+          })}
         </div>
+      </div>
+
+      <div className={styles.mobileContent}>
+        {DATA.map((block) => {
+          return (
+            <RoadmapBlockMobile
+              key={block.id}
+              title={block.title}
+              circleHeight={block.circleHeight}
+              dataList={block.data}
+              offset={block.leftOffset}
+            />
+          );
+        })}
       </div>
     </section>
   );

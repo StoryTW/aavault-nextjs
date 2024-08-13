@@ -1,0 +1,63 @@
+.roadmapBlock {
+  position: relative;
+
+  .wrapper {
+    padding-bottom: 36px;
+
+    .title {
+      @include gradientText;
+      display: inline-block;
+      @include mulish_900_20;
+      margin-bottom: 12px;
+    }
+
+    .block {
+      background-color: var(--bg_19);
+      padding: 16px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 266px;
+      min-width: 266px;
+      border: 1px solid var(--gray_3);
+
+      @include respond(mobileL) {
+        min-width: auto;
+      }
+
+      .list {
+        @include mulish_500_16;
+        color: var(--white);
+
+        li:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .dividerHeight {
+    position: absolute;
+    width: 1px;
+    z-index: 2;
+    left: 6px;
+    height: 100% !important;
+    top: 0px;
+  }
+
+  .circle {
+    position: absolute;
+    z-index: 3;
+    min-width: 12px;
+    min-height: 12px;
+    width: 12px;
+    height: 12px;
+    background: var(--gradient_green);
+    border-radius: 50%;
+  }
+
+  .dividerWidth {
+    position: absolute;
+    z-index: 2;
+    left: 6px;
+  }
+}

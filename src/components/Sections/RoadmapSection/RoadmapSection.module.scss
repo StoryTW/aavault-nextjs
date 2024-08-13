@@ -5,20 +5,56 @@
     margin-bottom: 120px;
   }
 
-  .title {
-    @include mulish_1000_130;
-    color: var(--white);
-    margin-bottom: 80px;
+  .titleWrapper {
+    display: flex;
+    gap: 24px;
+
+    @include respond(laptopM) {
+      justify-content: space-between;
+    }
+
+    .title {
+      @include mulish_1000_130;
+      color: var(--white);
+      margin-bottom: 80px;
+  
+      @include respond(laptopM) {
+        @include mulish_1000_28;
+        margin-bottom: 36px;
+      }
+    }
+
+    .caption {
+      padding-top: 36px;
+      @include mulish_500_14;
+      color: var(--gray);
+
+      @include respond(laptopM) {
+        padding-top: 4px;
+        @include mulish_500_10;
+      }
+    }
   }
+
 
   .content {
     overflow-x: scroll;
     @include noScrollBar;
 
+    @include respond(laptopM) {
+      display: none;
+    }
+
     .wrapper {
-      .blocks {
-        display: flex;
-      }
+      display: flex;
+    }
+  }
+
+  .mobileContent {
+    display: none;
+
+    @include respond(laptopM) {
+      display: block;
     }
   }
 }
