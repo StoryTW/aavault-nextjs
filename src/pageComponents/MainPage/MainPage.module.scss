@@ -2,7 +2,6 @@
   min-height: calc(100vh - 142px);
   height: 100%;
   position: relative;
-  overflow: hidden;
 
   @include respond(mobileL) {
     min-height: calc(100vh - 114px);

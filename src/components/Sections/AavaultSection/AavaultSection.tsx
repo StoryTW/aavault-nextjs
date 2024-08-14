@@ -10,20 +10,20 @@ const VIDEO_DATA: IVideoData[] = [
   {
     name: '1_Shield',
   },
-  {
-    name: '2_Defend',
-  },
-  {
-    name: '3_Speed_1',
-  },
+  // {
+  //   name: '2_Defend',
+  // },
+  // {
+  //   name: '3_Speed_1',
+  // },
   {
     name: '4_SLTP',
   },
 ];
 
 export const AavaultSection = () => {
-  const ref = useRef(null);
   const hasHydrated = useHydrated();
+  const ref = useRef(null);
 
   const isTablet = useMediaQuery({ query: '(max-width: 838px)' });
 
@@ -49,10 +49,26 @@ export const AavaultSection = () => {
             </div>
           </div>
         ) : (
-          <div className={styles.textWrapper}>
-            <motion.span className={styles.text} style={{ fontSize }}>
-              AAVAULT
-            </motion.span>
+          <div className={styles.desktopContent}>
+            <div className={styles.textWrapper}>
+              <motion.span className={styles.text} style={{ fontSize }}>
+                AAVAULT
+              </motion.span>
+            </div>
+            <div className={styles.cardVideo}>
+              <video
+                className={styles.video}
+                width={'100%'}
+                height={'100%'}
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                {/* <source src={`/video/advantages/${card.name}.mp4`} type='video/mp4' /> */}
+                <source src={`/video/advantages/1_Shield.mp4`} type='video/mp4' />
+              </video>
+            </div>
           </div>
         )}
       </div>

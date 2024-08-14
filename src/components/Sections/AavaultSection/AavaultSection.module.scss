@@ -1,4 +1,5 @@
 .aavaultSection {
+  height: 1000px;
 
   @include respond(laptopM) {
     margin-bottom: 120px;
@@ -9,6 +10,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      display: none;
 
       .title {
         @include gradientText;
@@ -17,19 +19,19 @@
         @include mulish_1000_64;
         font-size: 140px;
         text-align: center;
-  
+
         @include respond(tablet) {
           font-size: 96px;
         }
-  
+
         @include respond(tabletL) {
           font-size: 80px;
         }
-  
+
         @include respond(mobileL) {
           font-size: 68px;
         }
-  
+
         @media only screen and (width <= 370px) {
           font-size: 58px;
         }
@@ -40,14 +42,33 @@
       }
     }
 
-    .textWrapper {
-      display: flex;
-      justify-content: center;
+    .desktopContent {
+      height: 100%;
 
-      .text {
-        text-transform: uppercase;
-        @include mulish_1000_64;
-        @include gradientText;
+      .textWrapper {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 4;
+
+        .text {
+          text-transform: uppercase;
+          @include mulish_1000_64;
+          @include gradientText;
+        }
+      }
+
+      .cardVideo {
+        position: relative;
+        z-index: 5;
+        max-height: 780px;
+        max-width: 838px;
+    
+        .video {
+          object-fit: fill;
+          max-height: 780px;
+        }
       }
     }
   }
