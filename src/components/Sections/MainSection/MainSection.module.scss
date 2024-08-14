@@ -2,6 +2,11 @@
   padding-top: 102px;
   margin-bottom: 280px;
 
+  @include respond(laptopM) {
+    padding-top: 90px;
+    margin-bottom: 120px;
+  }
+
   .titleWrp {
     display: flex;
     align-items: end;
@@ -9,7 +14,7 @@
     flex-wrap: wrap;
 
     @include respond(mobileL) {
-      margin-bottom: 112px;
+      margin-bottom: 86px;
     }
 
     .title {
@@ -23,7 +28,7 @@
       }
 
       @include respond(mobileL) {
-        font-size: 43px;
+        font-size: 42px;
       }
     }
 
@@ -39,7 +44,14 @@
       }
 
       @include respond(mobileL) {
-        padding-bottom: 20px;
+        @include mulish_500_10;
+        padding-bottom: 18px;
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+
+      @media only screen and (width <= 342px) {
+        padding-bottom: 0px;
       }
     }
 
@@ -48,6 +60,7 @@
       text-transform: uppercase;
       @include gradientText;
       font-size: 100px;
+      padding-right: 10px;
 
       @include respond(laptopL) {
         font-size: 72px;
@@ -63,7 +76,7 @@
     display: flex;
     justify-content: center;
     gap: 196px;
-    margin-bottom: 32px;
+    margin-bottom: 164px;
 
     @include respond(laptopXL) {
       gap: 60px;
@@ -84,8 +97,18 @@
       }
 
       @include respond(mobileL) {
-        @include mulish_500_14;
+        @include mulish_500_12;
       }
+    }
+  }
+
+  .btn {
+    width: max-content;
+
+    svg {
+      transform: rotate(180deg);
+      width: 24px;
+      height: 24px;
     }
   }
 }

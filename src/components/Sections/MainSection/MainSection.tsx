@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './MainSection.module.scss';
 import { InteractiveBtn } from '@/components/InteractiveBtn/InteractiveBtn';
+import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
+import IconArrow from '@/assets/images/icon-arrow-up.svg';
 
 export const MainSection = () => {
   return (
@@ -26,6 +28,9 @@ export const MainSection = () => {
 
         <InteractiveBtn />
       </div>
+      <ButtonLink href='#about' className={styles.btn}>
+        <IconArrow />
+      </ButtonLink>
     </section>
   );
 };

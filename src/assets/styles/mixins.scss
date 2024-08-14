@@ -184,6 +184,13 @@
   line-height: normal;
 }
 
+@mixin mulish_500_12 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 @mixin mulish_500_16 {
   font-size: 16px;
   font-style: normal;

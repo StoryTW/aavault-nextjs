@@ -1,5 +1,5 @@
 import { MainPage } from '@/pageComponents/MainPage/MainPage';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Aavaullt Main',

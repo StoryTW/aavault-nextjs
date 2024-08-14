@@ -16,7 +16,18 @@ export const GreetingsSection = () => {
         </div>
         <div className={styles.robot}>
           <div className={styles.robotWrapper}>
-            <Image src='/images/robot_section.png' height={510} width={427} alt='robot' layout='responsive' />
+            <Image
+              src='/images/robot_section.png'
+              height={510}
+              width={427}
+              alt='robot'
+              sizes="100vw"
+              priority
+              style={{
+                height: 'auto',
+                width: '100%',
+              }}
+            />
           </div>
         </div>
         <div className={styles.description}>
@@ -26,15 +37,16 @@ export const GreetingsSection = () => {
               trading tools such as sniper trading, stop loss, take profit, automatic token auditing
               and more, providing users with enhanced security, speed and convenience
               <br />
-              <br />
-              I have studied the DEX trading field well and realized my purpose in the web 3.0
+              <br />I have studied the DEX trading field well and realized my purpose in the web 3.0
               world. My mission is to change the DEX trading industry by allowing everyone to buy
               tokens securely, quickly and conveniently without hassle
             </div>
 
             <GreetingsMobileText />
 
-            <ButtonLink href={'/'} className={styles.link}>CHECK WHITEPAPER</ButtonLink>
+            <ButtonLink href={'/'} className={styles.link}>
+              CHECK WHITEPAPER
+            </ButtonLink>
           </div>
         </div>
       </div>

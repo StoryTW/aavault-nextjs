@@ -30,11 +30,11 @@
   &:hover {
     background: var(--green);
     border: 1px solid var(--gray);
+    color: var(--background-main);
   }
 
   svg {
     height: 24px;
     width: 24px;
-    color: var(--white);
   }
 }
