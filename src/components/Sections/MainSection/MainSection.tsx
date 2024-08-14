@@ -7,12 +7,12 @@ export const MainSection = () => {
     <section className={styles.main}>
       <div className={styles.titleWrp}>
         <h1 className={styles.title}>
-          Discover DEX
+          GET EASY TO
           <br />
-          Trading in a
+          OVER $BILLION
         </h1>
         <div className={styles.aavault}>&lt;AAVAULT&gt;</div>
-        <div className={styles.newWay}>NEW WAY</div>
+        <div className={styles.newWay}>LIQUIDITY</div>
       </div>
 
       <div className={styles.info}>

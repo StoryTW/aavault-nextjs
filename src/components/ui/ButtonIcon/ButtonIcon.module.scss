@@ -1,0 +1,40 @@
+.btn {
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  @include mulish_700_18;
+  @include transition;
+  background: var(--background-main);
+  color: var(--white);
+  cursor: pointer;
+  outline: none;
+
+  &:active {
+    border: 1px solid var(--gray);
+    background: var(--background-main);
+  }
+
+  &:focus {
+    border: 1px solid var(--gray);
+    background: var(--background-main);
+  }
+
+  &:disabled {
+    border: 1px solid var(--gray);
+    background: var(--background-main);
+  }
+
+  &:hover {
+    background: var(--green);
+    border: 1px solid var(--gray);
+  }
+
+  svg {
+    height: 24px;
+    width: 24px;
+    color: var(--white);
+  }
+}

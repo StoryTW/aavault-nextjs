@@ -38,6 +38,25 @@
           margin-bottom: 0px;
         }
       }
+
+      .policy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 64px;
+
+        @include respond(laptopXL) {
+          gap: 30px;
+        }
+
+        @include respond(laptopM) {
+          display: none;
+        }
+        
+        .policyText {
+          @include mulish_600_16;
+          color: var(--gray_6);
+        }
+      }
     }
 
     .emailBlock {
@@ -97,11 +116,18 @@
         }
       }
 
-      .socials {
+      .socialWrapper {
         display: flex;
         align-items: center;
-        gap: 16px;
+        justify-content: space-between;
+        
+        .socials {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
       }
+
 
       .textBlock {
         display: none;
