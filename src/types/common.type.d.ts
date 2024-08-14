@@ -7,3 +7,7 @@ declare interface IFaqModel {
 declare interface IRoadmapDataList {
   text: string;
 }
+
+declare interface IVideoData {
+  name: string;
+}

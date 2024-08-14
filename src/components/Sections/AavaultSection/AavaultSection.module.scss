@@ -1,11 +1,49 @@
 .aavaultSection {
+
+  @include respond(laptopM) {
+    margin-bottom: 120px;
+  }
+
   .wrapper {
-    height: 2000px;
+    .tabletContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        @include gradientText;
+        text-transform: uppercase;
+        margin-bottom: 36px;
+        @include mulish_1000_64;
+        font-size: 140px;
+        text-align: center;
+  
+        @include respond(tablet) {
+          font-size: 96px;
+        }
+  
+        @include respond(tabletL) {
+          font-size: 80px;
+        }
+  
+        @include respond(mobileL) {
+          font-size: 68px;
+        }
+  
+        @media only screen and (width <= 370px) {
+          font-size: 58px;
+        }
+      }
+
+      .catalog {
+        width: 100%;
+      }
+    }
 
     .textWrapper {
       display: flex;
       justify-content: center;
-      
+
       .text {
         text-transform: uppercase;
         @include mulish_1000_64;

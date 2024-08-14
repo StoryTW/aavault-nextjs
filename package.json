@@ -31,6 +31,7 @@
     "postcss": "^8.4.39",
     "prettier": "^3.3.2",
     "react-remove-scroll": "^2.5.10",
+    "react-responsive": "^10.0.0",
     "sass": "^1.77.6",
     "typescript": "^5"
   }

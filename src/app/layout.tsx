@@ -5,6 +5,7 @@ import { Header } from '@/layout/Header/Header';
 import { Footer } from '@/layout/Footer/Footer';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-cards';
 import '@/assets/styles/index.scss';
 
 const mulish = Mulish({ subsets: ['latin'] });

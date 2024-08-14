@@ -17,7 +17,7 @@ export const MainPage = () => {
 
       <AdvantageSection />
 
-      {/* <AavaultSection />  */}
+      <AavaultSection /> 
 
       <NativeCurrencySection />
 
