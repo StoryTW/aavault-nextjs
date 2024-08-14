@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /*&*$
+Allow: /_next/image?url*
+
+Sitemap: https://aavault.io/sitemap.xml

@@ -1,8 +1,9 @@
 .aavaultSection {
-  height: 1000px;
+  display: none;
 
-  @include respond(laptopM) {
-    margin-bottom: 120px;
+  @include respond(tabletL) {
+    margin-bottom: 100px;
+    display: block;
   }
 
   .wrapper {
@@ -10,7 +11,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      display: none;
 
       .title {
         @include gradientText;
@@ -42,34 +42,34 @@
       }
     }
 
-    .desktopContent {
-      height: 100%;
+    // .desktopContent {
+    //   height: 100%;
 
-      .textWrapper {
-        position: sticky;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        z-index: 4;
+    //   .textWrapper {
+    //     position: sticky;
+    //     top: 0;
+    //     display: flex;
+    //     justify-content: center;
+    //     z-index: 4;
 
-        .text {
-          text-transform: uppercase;
-          @include mulish_1000_64;
-          @include gradientText;
-        }
-      }
+    //     .text {
+    //       text-transform: uppercase;
+    //       @include mulish_1000_64;
+    //       @include gradientText;
+    //     }
+    //   }
 
-      .cardVideo {
-        position: relative;
-        z-index: 5;
-        max-height: 780px;
-        max-width: 838px;
+    //   .cardVideo {
+    //     position: relative;
+    //     z-index: 5;
+    //     max-height: 780px;
+    //     max-width: 838px;
     
-        .video {
-          object-fit: fill;
-          max-height: 780px;
-        }
-      }
-    }
+    //     .video {
+    //       object-fit: fill;
+    //       max-height: 780px;
+    //     }
+    //   }
+    // }
   }
 }

@@ -1,34 +1,35 @@
 import React from 'react';
 import styles from './AdvantageSection.module.scss';
+import Image from 'next/image';
 
 const DATA = [
   {
-    title: 'TOOLS',
+    title: 'UNIQUE CUSTOMIZATIONS',
     description:
-      'Users can set stop losses and take profits, protecting against losses and maximizing profits like on CEX',
-    video: '1_Shield',
+      'We offer unique trading settings that allow each user to experience complete freedom of choice and manage their transactions independently.',
+    imageName: 'uniq',
+    area: 'uniq',
+  },
+  {
+    title: 'Multi-Blockchain Integration',
+    description:
+      'AVAULT supports multi-blockchain integration, giving traders access to liquidity across multiple platforms and the ability to trade various assets without switching to other platforms. ',
+    imageName: 'multi-blockchain',
+    area: 'multi',
+  },
+  {
+    title: 'Rapid transaction processing',
+    description:
+      'Rapid transaction processing is achieved through advanced smart contracts that automatically select the best routes for completing transactions in the shortest possible time.',
+    imageName: 'rapid',
+    area: 'rapid',
+  },
+  {
+    title: 'Distinctive tools',
+    description:
+      'The platform offers a broad spectrum of trading tools, classic swap and limit orders, TWAP orders and much more, as well as unique tools for arbitrage and automated trading.',
+    imageName: 'tools',
     area: 'tools',
-  },
-  {
-    title: 'Convenience',
-    description:
-      'Trade effortlessly with our auto audit feature, guarding you from scams and ensuring security',
-    video: '2_Defend',
-    area: 'conv',
-  },
-  {
-    title: 'SPEED',
-    description:
-      'Get tokens instantly, dont miss any market movement and act on opportunities. I am speed',
-    video: '3_Speed_1',
-    area: 'speed',
-  },
-  {
-    title: 'SAFETY',
-    description:
-      'We guarantee full data protection and confidentiality. Your information is a cosmic secret with us',
-    video: '3_Speed_2',
-    area: 'safety',
   },
 ];
 
@@ -54,20 +55,37 @@ export const AdvantageSection = () => {
               }}
             >
               <div className={styles.cardWrapper}>
-                <h3 className={styles.cardTitle}>{card.title}</h3>
-                <div className={styles.cardDescription}>{card.description}</div>
-                <div className={styles.cardVideo}>
-                  <video
-                    className={styles.video}
-                    width={'100%'}
-                    height={'100%'}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src={`/video/advantages/${card.video}.mp4`} type='video/mp4' />
-                  </video>
+                <div>
+                  <h3 className={styles.cardTitle}>{card.title}</h3>
+                  <div className={styles.cardDescription}>{card.description}</div>
+                </div>
+                <div className={styles.imageDesktop}>
+                  <Image
+                    src={`/images/advantages/${card.imageName}.png`}
+                    alt='service_example'
+                    width={580}
+                    height={371}
+                    sizes='100vw'
+                    priority
+                    style={{
+                      // height: 'auto',
+                      width: '100%',
+                    }}
+                  />
+                </div>
+                <div className={styles.imageTablet}>
+                  <Image
+                    src={`/images/advantages/${card.imageName}_mob.png`}
+                    alt='service_example'
+                    width={296}
+                    height={252}
+                    sizes='100vw'
+                    priority
+                    style={{
+                      // height: 'auto',
+                      width: '100%',
+                    }}
+                  />
                 </div>
               </div>
             </div>

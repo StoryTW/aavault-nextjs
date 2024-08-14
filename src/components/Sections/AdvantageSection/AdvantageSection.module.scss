@@ -47,25 +47,25 @@
   .wrapper {
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(8, minmax(100px, 236px));
+    grid-template-columns: repeat(8, minmax(50px, 236px));
     grid-template-areas:
-      '. . tools tools tools conv conv conv'
-      'speed speed speed safety safety safety safety safety';
+      '. . uniq uniq uniq multi multi multi'
+      'rapid rapid rapid tools tools tools tools tools';
 
     @include respond(laptopXL) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-        'tools conv'
-        'speed safety';
+        'uniq multi'
+        'rapid tools';
     }
 
     @include respond(tablet) {
       grid-template-columns: 1fr;
       grid-template-areas:
-        'tools'
-        'conv'
-        'speed'
-        'safety';
+        'uniq'
+        'multi'
+        'rapid'
+        'tools';
     }
 
     .card {
@@ -73,7 +73,11 @@
       border: 1px solid var(--gray_3);
 
       .cardWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 36px;
+        height: 100%;
 
         @include respond(tablet) {
           padding: 20px;
@@ -94,19 +98,29 @@
           @include mulish_500_18;
           color: var(--gray_2);
           margin-bottom: 32px;
+          max-width: 520px;
 
           @include respond(tablet) {
             @include mulish_500_16;
           }
         }
 
-        .cardVideo {
-          max-width: 100%;
-          max-height: 397px;
+        .imageDesktop {
+          max-height: 371px;
+          height: 100%;
 
-          .video {
-            object-fit: fill;
-            max-height: 397px;
+          @include respond(mobileL) {
+            display: none;
+          }
+        }
+
+        .imageTablet {
+          max-height: 252px;
+          height: 100%;
+          display: none;
+
+          @include respond(mobileL) {
+            display: block;
           }
         }
       }
