@@ -1,9 +1,7 @@
-// import React, { useEffect, useRef, useState } from 'react';
 import React from 'react';
 import styles from './NativeCurrencySection.module.scss';
 import { CardCurrency } from '@/components/CardCurrency/CardCurrency';
 import Image from 'next/image';
-// import { useInView } from 'framer-motion';
 
 const DATA = [
   {
@@ -63,42 +61,6 @@ const DATA = [
 ];
 
 export const NativeCurrencySection = () => {
-  // const scrollRef = useRef<HTMLUListElement | null>(null);
-
-  // const inView = useInView(scrollRef, {
-  //   once: true,
-  // });
-
-  // useEffect(() => {
-  //   let timeout: NodeJS.Timeout;
-
-  //   if (inView && scrollRef.current) {
-  //     timeout = setTimeout(() => {
-  //       if (scrollRef.current) {
-  //         scrollRef.current.scrollTo({
-  //           top: scrollRef.current.scrollHeight,
-  //           behavior: 'smooth',
-  //         });
-  //       }
-  //     }, 500);
-  //   }
-
-  //   return () => {
-  //     clearTimeout(timeout);
-  //   };
-  // }, [inView]);
-
-  // useEffect(() => {
-  //   if (inView && scrollRef.current) {
-  //     const handleScroll = () => {
-  //       if (scrollRef.current) {
-  //         scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-  //       }
-  //     };
-  //     requestAnimationFrame(handleScroll);
-  //   }
-  // }, [inView]);
-
   return (
     <section id='tokenomics' className={styles.nativeCurrency}>
       <div className={styles.header}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Navbar.module.scss';
 import { NAV_DATA } from '@/layout/Footer/Footer';
 import Link from 'next/link';
@@ -18,3 +18,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export const NavbarMemo = memo(Navbar);

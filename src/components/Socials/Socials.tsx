@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Socials.module.scss';
 import { ButtonLink } from '../ui/ButtonLink/ButtonLink';
 import Image from 'next/image';
@@ -22,3 +22,5 @@ export const Socials = () => {
     </div>
   );
 };
+
+export const SocialsMemo = memo(Socials);

@@ -52,7 +52,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 446px));
     grid-template-rows: minmax(200px, 420px);
-    gap: 24px;
+    gap: 20px;
 
     @include respond(laptop1200) {
       grid-template-columns: repeat(2, 1fr);

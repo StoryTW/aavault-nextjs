@@ -35,8 +35,13 @@
       color: var(--gray_t);
       text-transform: uppercase;
 
+      @media only screen and (width <= 1549px) {
+        max-width: 390px;
+      }
+
       @include respond(laptopXL) {
         margin-bottom: 24px;
+        max-width: unset;
       }
 
       @include respond(laptopM) {

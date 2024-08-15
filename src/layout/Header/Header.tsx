@@ -1,31 +1,31 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import styles from './Header.module.scss';
-import { Logo } from '@/components/Logo/Logo';
-import { Socials } from '@/components/Socials/Socials';
+import { LogoMemo } from '@/components/Logo/Logo';
+import { SocialsMemo } from '@/components/Socials/Socials';
 import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 import { Burger } from '@/components/ui/Burger/Burger';
 import { MobileBurger } from '@/components/MobileBurger/MobileBurger';
-import { Navbar } from './Navbar/Navbar';
+import { NavbarMemo } from './Navbar/Navbar';
 
 export const Header = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
 
-  const toggleOpenMenu = () => {
+  const toggleOpenMenu = useCallback(() => {
     setOpenMenu((prev) => !prev);
-  };
+  }, [openMenu]);
 
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
         <div className={styles.leftSide}>
-          <Logo />
+          <LogoMemo />
 
-          <Navbar />
+          <NavbarMemo />
         </div>
 
         <div className={styles.rightSide}>
-          <Socials />
+          <SocialsMemo />
 
           <ButtonLink href={'/trade'}>TRADE</ButtonLink>
 
