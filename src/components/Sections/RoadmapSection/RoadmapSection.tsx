@@ -1,9 +1,9 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import styles from './RoadmapSection.module.scss';
 import { RoadmapBlock } from '@/components/RoadmapBlock/RoadmapBlock';
 import { RoadmapBlockMobile } from '@/components/RoadmapBlockMobile/RoadmapBlockMobile';
-import { motion, useInView } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useHorizontalScroll } from '@/hooks/useHorizontalScroll';
 
 const DATA = [
@@ -113,24 +113,24 @@ const DATA = [
 ];
 
 export const RoadmapSection = () => {
-  const elRef = useHorizontalScroll()
+  const elRef = useHorizontalScroll();
 
   const inView = useInView(elRef, {
     once: true,
   });
 
   useEffect(() => {
-    if (inView && elRef.current) {
-      setTimeout(() => {
-        if (elRef.current) {
-          elRef.current.scrollTo({
-            left: elRef.current.scrollWidth,
-            behavior: 'smooth',
-          });
-        }
-      }, 2500);
-    }
-  }, [inView]);
+    const timer = setTimeout(() => {
+      if (inView && elRef.current) {
+        elRef.current.scrollTo({
+          left: elRef.current.scrollWidth,
+          behavior: 'smooth',
+        });
+      }
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, [inView, elRef.current]);
 
   return (
     <section id='roadmap' className={styles.section}>
