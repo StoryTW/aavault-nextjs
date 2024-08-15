@@ -106,8 +106,8 @@
         }
 
         .imageDesktop {
-          max-height: 371px;
-          height: 100%;
+          position: relative;
+          height: 371px;
 
           @include respond(mobileL) {
             display: none;
@@ -115,12 +115,13 @@
         }
 
         .imageTablet {
-          max-height: 252px;
-          height: 100%;
+          position: relative;
           display: none;
-
+          
           @include respond(mobileL) {
             display: block;
+            height: 252px;
+            overflow: hidden;
           }
         }
       }

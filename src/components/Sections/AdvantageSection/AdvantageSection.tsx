@@ -37,9 +37,7 @@ export const AdvantageSection = () => {
   return (
     <section id='benefits' className={styles.advantage}>
       <div className={styles.titleWrapper}>
-        <div className={styles.caption}>
-          &lt; Benefits &gt;
-        </div>
+        <div className={styles.caption}>&lt; Benefits &gt;</div>
         <h2 className={styles.title}>
           Discover the <span>advantages</span> of AAVAULT
         </h2>
@@ -63,28 +61,20 @@ export const AdvantageSection = () => {
                   <Image
                     src={`/images/advantages/${card.imageName}.png`}
                     alt='service_example'
-                    width={580}
-                    height={371}
+                    style={{ objectFit: 'cover' }}
                     sizes='100vw'
                     priority
-                    style={{
-                      // height: 'auto',
-                      width: '100%',
-                    }}
+                    fill
                   />
                 </div>
                 <div className={styles.imageTablet}>
                   <Image
                     src={`/images/advantages/${card.imageName}_mob.png`}
                     alt='service_example'
-                    width={296}
-                    height={252}
+                    style={{ objectFit: 'cover' }}
                     sizes='100vw'
                     priority
-                    style={{
-                      // height: 'auto',
-                      width: '100%',
-                    }}
+                    fill
                   />
                 </div>
               </div>
