@@ -104,11 +104,11 @@ export const NativeCurrencySection = () => {
       <div className={styles.header}>
         <div className={styles.caption}>&lt; Token and tokenomics &gt;</div>
         <h2 className={styles.title}>
-          AAVAULT IS THE NATIVE <span>currency</span>
+          $AAVA IS THE ICONIC <span>currency</span>
         </h2>
         <div className={styles.description}>
           Maximize your experience with the $AAVL token: enjoy exclusive access, reduced fees,
-          staking rewards, and DAO governance. Join the whitelist for a chance to be part of our
+          staking rewards, and DAO governance.<br/> Join the whitelist for a chance to be part of our
           journey.
         </div>
       </div>

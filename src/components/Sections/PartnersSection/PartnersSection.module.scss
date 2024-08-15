@@ -1,4 +1,4 @@
-.faq {
+.partners {
   margin-bottom: 280px;
 
   @include respond(laptopM) {
@@ -50,32 +50,52 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 446px));
-    grid-template-rows: minmax(200px, 420px);
-    gap: 24px;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(100px, 390px));
+    gap: 80px 90px;
 
-    @include respond(laptop1200) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: minmax(200px, 420px) minmax(200px, 420px);
+    @include respond(laptopXL) {
+      gap: 24px;
     }
 
-    @include respond(laptopM) {
-      display: none;
-    }
-  }
-
-  .swiperBlock {
-    display: none;
-
-    @include respond(laptopM) {
-      display: block;
+    @include respond(tabletS) {
+      grid-template-columns: repeat(2, minmax(100px, 390px));
     }
 
-    .iconSwipe {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 36px;
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      position: relative;
+      padding: 32px;
+      background-color: var(--black_12);
+      border-radius: 12px;
+
+      @include respond(laptop1200) {
+        padding: 16px;
+      }
+
+      @include respond(tabletS) {
+        padding: 12px;
+      }
+
+      @include respond(mobile) {
+        padding: 24px;
+      }
+
+      .imageWrapper {
+        position: relative;
+        height: 96px;
+
+        @include respond(laptopM) {
+          height: 62px;
+        }
+
+        @include respond(mobile) {
+          height: 36px;
+        }
+      }
     }
   }
 }

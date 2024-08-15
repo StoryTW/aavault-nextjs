@@ -8,27 +8,27 @@ import Image from 'next/image';
 const DATA: IFaqModel[] = [
   {
     id: '<01>',
-    question: 'Is your platform secure?',
+    question: 'What is AAVAULT?',
     answer:
-      'Yes, Our Platform Is Designed With Top-Tier Security Measures To Ensure Your Data And Transactions Remain Safe And Confidential.',
+      'AAVAULT is a multi-blockchain DeFi trading platform that ensures secure and efficient operations using smart contracts.',
   },
   {
     id: '<02>',
-    question: 'How safe is my data?',
+    question: 'Which blockchains does AAVAULT support?',
     answer:
-      'The Security Of Your Data Is Our Top Priority. We Use Strict Security Measures To Protect Your Information. In Addition, We Do Not Collect Or Store Any Personal Data Beyond What Is Necessary For The Operation Of Our Platform',
+      'AAVAULT supports all popular blockchains, offering ample opportunities for trading on various decentralized exchanges.',
   },
   {
     id: '<03>',
-    question: 'Will you have a token?',
+    question: 'What tools does AAVAULT offer?',
     answer:
-      'Yes, Our Platform Is Designed With Top-Tier Security Measures To Ensure Your Data And Transactions Remain Safe And Confidential.',
+      'AAVAULT provides advanced tools like limit with stop-loss, take-profit, twap swap and more, to optimize your trading strategies.',
   },
   {
     id: '<04>',
-    question: 'What blockchains does your platform support?',
+    question: 'What are the main use cases for $AAVA?',
     answer:
-      'The Security Of Your Data Is Our Top Priority. We Use Strict Security Measures To Protect Your Information. In Addition, We Do Not Collect Or Store Any Personal Data Beyond What Is Necessary For The Operation Of Our Platform',
+      '$AAVA can be used for trading, staking, reducing transaction fees, and earning rewards within the AAVAULT.',
   },
 ];
 

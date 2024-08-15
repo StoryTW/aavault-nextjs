@@ -21,7 +21,7 @@
       @include mulish_1000_130;
       font-size: 100px;
       text-transform: uppercase;
-      color: var(--white);
+      color: var(--gray_t);
 
       @include respond(laptopL) {
         font-size: 72px;

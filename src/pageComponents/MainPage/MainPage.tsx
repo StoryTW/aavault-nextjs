@@ -7,6 +7,7 @@ import { AdvantageSection } from '@/components/Sections/AdvantageSection/Advanta
 import { NativeCurrencySection } from '@/components/Sections/NativeCurrencySection/NativeCurrencySection';
 import { AavaultSection } from '@/components/Sections/AavaultSection/AavaultSection';
 import { RoadmapSection } from '@/components/Sections/RoadmapSection/RoadmapSection';
+import { PartnersSection } from '@/components/Sections/PartnersSection/PartnersSection';
 
 export const MainPage = () => {
   return (
@@ -24,6 +25,8 @@ export const MainPage = () => {
       <RoadmapSection />
 
       <FaqSection />
+
+      <PartnersSection />
     </main>
   );
 };

@@ -32,7 +32,7 @@
 
     .title {
       @include mulish_1000_64;
-      color: var(--white);
+      color: var(--gray_t);
       text-transform: uppercase;
 
       @include respond(laptopXL) {

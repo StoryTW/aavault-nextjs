@@ -36,6 +36,12 @@
     }
   }
 
+  @if $breakpoint == tabletS {
+    @media only screen and (width <= 640px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tabletL {
     @media only screen and (width <= 540px) {
       @content;
