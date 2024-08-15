@@ -4,6 +4,7 @@ import styles from './RoadmapSection.module.scss';
 import { RoadmapBlock } from '@/components/RoadmapBlock/RoadmapBlock';
 import { RoadmapBlockMobile } from '@/components/RoadmapBlockMobile/RoadmapBlockMobile';
 import { motion, useInView } from 'framer-motion';
+import { useHorizontalScroll } from '@/hooks/useHorizontalScroll';
 
 const DATA = [
   {
@@ -112,18 +113,18 @@ const DATA = [
 ];
 
 export const RoadmapSection = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const elRef = useHorizontalScroll()
 
-  const inView = useInView(scrollRef, {
+  const inView = useInView(elRef, {
     once: true,
   });
 
   useEffect(() => {
-    if (inView && scrollRef.current) {
+    if (inView && elRef.current) {
       setTimeout(() => {
-        if (scrollRef.current) {
-          scrollRef.current.scrollTo({
-            left: scrollRef.current.scrollWidth,
+        if (elRef.current) {
+          elRef.current.scrollTo({
+            left: elRef.current.scrollWidth,
             behavior: 'smooth',
           });
         }
@@ -137,7 +138,7 @@ export const RoadmapSection = () => {
         <h2 className={styles.title}>ROADMAP</h2>
         <span className={styles.caption}>&lt; 2024-2025 &gt;</span>
       </div>
-      <div className={styles.content} ref={scrollRef}>
+      <div className={styles.content} ref={elRef}>
         <div className={styles.wrapper}>
           {DATA.map((block) => {
             return (

@@ -47,12 +47,13 @@ export const GreetingsSection = () => {
             transition={{ duration: 0.7 }}
           >
             <Image
-              src='/images/robot_section.png'
+              src='/images/robot.png'
               height={510}
               width={427}
               alt='robot'
               sizes='100vw'
               priority
+              quality={100}
               style={{
                 height: 'auto',
                 width: '100%',
