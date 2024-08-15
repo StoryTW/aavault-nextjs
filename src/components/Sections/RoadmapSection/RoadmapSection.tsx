@@ -1,7 +1,9 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useRef } from 'react';
 import styles from './RoadmapSection.module.scss';
 import { RoadmapBlock } from '@/components/RoadmapBlock/RoadmapBlock';
 import { RoadmapBlockMobile } from '@/components/RoadmapBlockMobile/RoadmapBlockMobile';
+import { motion, useInView } from 'framer-motion';
 
 const DATA = [
   {
@@ -11,6 +13,7 @@ const DATA = [
     dividerHeight: 141,
     leftOffset: 31,
     circleHeight: 91,
+    delay: 0.5,
     data: [
       {
         text: '< Alpha version >',
@@ -30,6 +33,7 @@ const DATA = [
     dividerHeight: 253,
     leftOffset: 61,
     circleHeight: 94,
+    delay: 1.5,
     data: [
       {
         text: '< Demo version >',
@@ -49,6 +53,7 @@ const DATA = [
     dividerHeight: 345,
     leftOffset: 104,
     circleHeight: 134,
+    delay: 2.5,
     data: [
       {
         text: '< New blockchain integration >',
@@ -71,6 +76,7 @@ const DATA = [
     dividerHeight: 261,
     leftOffset: 61,
     circleHeight: 90,
+    delay: 3.5,
     data: [
       {
         text: '< DEX and CEX listings >',
@@ -90,6 +96,7 @@ const DATA = [
     dividerHeight: 154,
     leftOffset: 31,
     circleHeight: 90,
+    delay: 2.1,
     data: [
       {
         text: '< Mobile version >',
@@ -105,13 +112,32 @@ const DATA = [
 ];
 
 export const RoadmapSection = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const inView = useInView(scrollRef, {
+    once: true,
+  });
+
+  useEffect(() => {
+    if (inView && scrollRef.current) {
+      setTimeout(() => {
+        if (scrollRef.current) {
+          scrollRef.current.scrollTo({
+            left: scrollRef.current.scrollWidth,
+            behavior: 'smooth',
+          });
+        }
+      }, 2500);
+    }
+  }, [inView]);
+
   return (
     <section id='roadmap' className={styles.section}>
       <div className={styles.titleWrapper}>
         <h2 className={styles.title}>ROADMAP</h2>
         <span className={styles.caption}>&lt; 2024-2025 &gt;</span>
       </div>
-      <div className={styles.content}>
+      <div className={styles.content} ref={scrollRef}>
         <div className={styles.wrapper}>
           {DATA.map((block) => {
             return (
@@ -121,6 +147,7 @@ export const RoadmapSection = () => {
                 dividerHeight={block.dividerHeight}
                 dataList={block.data}
                 offset={block.offset}
+                delay={block.delay}
               />
             );
           })}
