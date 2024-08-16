@@ -69,7 +69,8 @@
     .card {
       position: relative;
       padding: 32px;
-      background-color: var(--black_12);
+      background-color: transparent;
+      border: 1px solid var(--gray);
       border-radius: 12px;
 
       @include respond(laptop1200) {

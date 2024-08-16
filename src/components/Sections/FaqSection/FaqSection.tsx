@@ -8,8 +8,8 @@ import Image from 'next/image';
 const DATA: IFaqModel[] = [
   {
     id: '<01>',
-    question: 'What is the AAVAULT platform?',
-    answer: 'A multi-blockchain DeFi platform with integrated security and efficiency features',
+    question: 'What is the AAVAULT?',
+    answer: 'A multi-blockchain DeFi platform with integrated security and efficiency features.',
   },
   {
     id: '<02>',
