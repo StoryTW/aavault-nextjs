@@ -5,29 +5,35 @@ import Image from 'next/image';
 const DATA = [
   {
     title: 'UNIQUE CUSTOMIZATIONS',
-    description:
-      'Enjoy complete freedom with unique trading settings, allowing full transaction control.',
+    description: (
+      <>Enjoy complete freedom with unique trading settings, allowing full transaction control.</>
+    ),
     imageName: 'uniq',
     area: 'uniq',
   },
   {
     title: 'Blockchain Integration',
-    description:
-      'AAVAULT enables liquidity access across multiple blockchains for seamless asset trading.',
+    description: (
+      <>AAVAULT enables liquidity access across multiple blockchains for seamless asset trading.</>
+    ),
     imageName: 'multi-blockchain',
     area: 'multi',
   },
   {
     title: 'Speedy Transactions',
-    description:
-      'Advanced smart contracts provide the quickest routes for fast transaction completion.',
+    description: (
+      <>Advanced smart contracts provide the quickest routes for fast transaction completion.</>
+    ),
     imageName: 'rapid',
     area: 'rapid',
   },
   {
     title: 'Distinctive tools',
-    description:
-      'Access to trading tools, including swaps, limit and TWAP orders, and unique other features.',
+    description: (
+      <>
+        Access to trading tools, including swaps, limit and TWAP orders, and unique other features.
+      </>
+    ),
     imageName: 'tools',
     area: 'tools',
   },
