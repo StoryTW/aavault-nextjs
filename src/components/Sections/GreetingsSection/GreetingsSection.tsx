@@ -81,7 +81,11 @@ export const GreetingsSection = () => {
 
             <GreetingsMobileText />
 
-            <ButtonLink href={'/'} className={styles.link}>
+            <ButtonLink
+              href='https://whitepaper.aavault.io'
+              target='_blank'
+              className={styles.link}
+            >
               CHECK WHITEPAPER
             </ButtonLink>
           </motion.div>

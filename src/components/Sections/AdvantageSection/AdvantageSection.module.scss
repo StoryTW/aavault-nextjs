@@ -59,7 +59,7 @@
         'rapid tools';
     }
 
-    @include respond(tablet) {
+    @include respond(laptopM) {
       grid-template-columns: 1fr;
       grid-template-areas:
         'uniq'
@@ -109,7 +109,7 @@
           position: relative;
           height: 371px;
 
-          @include respond(mobileL) {
+          @include respond(laptopXL) {
             display: none;
           }
         }
@@ -117,11 +117,15 @@
         .imageTablet {
           position: relative;
           display: none;
-          
-          @include respond(mobileL) {
+
+          @include respond(laptopXL) {
             display: block;
-            height: 252px;
+            height: 322px;
             overflow: hidden;
+          }
+          
+          @include respond(mobile) {
+            height: 276px;
           }
         }
       }

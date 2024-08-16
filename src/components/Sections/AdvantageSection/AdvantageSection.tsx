@@ -61,7 +61,9 @@ export const AdvantageSection = () => {
                   <Image
                     src={`/images/advantages/${card.imageName}.png`}
                     alt='service_example'
-                    style={{ objectFit: 'cover' }}
+                    style={{
+                      objectFit: 'contain',
+                    }}
                     sizes='100vw'
                     priority
                     fill
@@ -69,9 +71,9 @@ export const AdvantageSection = () => {
                 </div>
                 <div className={styles.imageTablet}>
                   <Image
-                    src={`/images/advantages/${card.imageName}_mob.png`}
+                    src={`/images/advantages/${card.imageName}_mob.svg`}
                     alt='service_example'
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'contain' }}
                     sizes='100vw'
                     priority
                     fill
