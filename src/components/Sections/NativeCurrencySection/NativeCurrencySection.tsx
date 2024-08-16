@@ -70,8 +70,7 @@ export const NativeCurrencySection = () => {
         </h2>
         <div className={styles.description}>
           Maximize your experience with the $AAVL token: enjoy exclusive access, reduced fees,
-          staking rewards, and DAO governance.<br/> Join the whitelist for a chance to be part of our
-          journey.
+          staking rewards, and DAO governance.
         </div>
       </div>
       <div className={styles.content}>

@@ -13,7 +13,7 @@
 
   .title {
     @include mulish_1000_130;
-    color: var(--white);
+    color: var(--gray_t);
     text-transform: uppercase;
     @include gradientText;
     text-align: center;
@@ -31,7 +31,7 @@
 
   .description {
     @include mulish_500_24;
-    color: var(--gray_2);
+    color: var(--white);
     text-align: center;
   }
 }
