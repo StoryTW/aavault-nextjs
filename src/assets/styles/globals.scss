@@ -57,7 +57,7 @@ button:focus {
 
 body {
   margin: 0;
-  background: var(--background-main);
+  background: black;
   color: var(--white);
   position: relative;
   min-height: 100vh;
@@ -70,20 +70,20 @@ body {
   scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--background-main);
+    background: black;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--black_12);
+    background: var(--background-main);
     border-radius: 2.5px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--gradient_green);
+    background: var(--black_12);
   }
 }
 
