@@ -85,6 +85,9 @@
     @include respond(laptopM) {
       flex-direction: column;
       gap: 32px;
+    }
+
+    @include respond(mobileL) {
       margin-bottom: 124px;
     }
 
