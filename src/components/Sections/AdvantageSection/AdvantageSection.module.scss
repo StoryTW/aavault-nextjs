@@ -109,6 +109,10 @@
           position: relative;
           height: 371px;
 
+          @media only screen and (width <= 1496px) {
+            height: 271px;
+          }
+
           @include respond(laptopXL) {
             display: none;
           }
@@ -123,7 +127,7 @@
             height: 322px;
             overflow: hidden;
           }
-          
+
           @include respond(mobile) {
             height: 276px;
           }

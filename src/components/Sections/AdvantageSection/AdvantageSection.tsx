@@ -6,28 +6,28 @@ const DATA = [
   {
     title: 'UNIQUE CUSTOMIZATIONS',
     description:
-      'We offer unique trading settings that allow each user to experience complete freedom of choice and manage their transactions independently.',
+      'Enjoy complete freedom with unique trading settings, allowing full transaction control.',
     imageName: 'uniq',
     area: 'uniq',
   },
   {
-    title: 'Multi-Blockchain Integration',
+    title: 'Blockchain Integration',
     description:
-      'AVAULT supports multi-blockchain integration, giving traders access to liquidity across multiple platforms and the ability to trade various assets without switching to other platforms. ',
+      'AAVAULT enables liquidity access across multiple blockchains for seamless asset trading.',
     imageName: 'multi-blockchain',
     area: 'multi',
   },
   {
-    title: 'Rapid transaction processing',
+    title: 'Speedy Transactions',
     description:
-      'Rapid transaction processing is achieved through advanced smart contracts that automatically select the best routes for completing transactions in the shortest possible time.',
+      'Advanced smart contracts provide the quickest routes for fast transaction completion.',
     imageName: 'rapid',
     area: 'rapid',
   },
   {
     title: 'Distinctive tools',
     description:
-      'The platform offers a broad spectrum of trading tools, classic swap and limit orders, TWAP orders and much more, as well as unique tools for arbitrage and automated trading.',
+      'Access to trading tools, including swaps, limit and TWAP orders, and unique other features.',
     imageName: 'tools',
     area: 'tools',
   },

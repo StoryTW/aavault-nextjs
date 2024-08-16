@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--gray_3);
-
+  
   .wrapper {
     display: grid;
     grid-template-columns: minmax(100px, 446px) minmax(100px, 739px) minmax(100px, 600px);
@@ -135,7 +135,7 @@
         @include respond(laptopM) {
           display: flex;
           flex-wrap: wrap;
-          gap: 16px 30px;
+          gap: 16px;
           margin-top: 30px;
         }
 

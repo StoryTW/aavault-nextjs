@@ -27,11 +27,23 @@ export const NAV_DATA = [
   },
 ];
 
-const TEXT_DATA = [
-  '< PRIVACY POLICY >',
-  '< SECURITY POLICY >',
-  '< COOKIES POLICY >',
-  '< WHITEPAPER >',
+const POLICY_DATA = [
+  {
+    href: 'privacy_policy',
+    text: '< PRIVACY POLICY >',
+  },
+  {
+    href: 'security_policy',
+    text: '< SECURITY POLICY >',
+  },
+  {
+    href: 'cookies_policy',
+    text: '< COOKIES POLICY >',
+  },
+  {
+    href: 'https://whitepaper.aavault.io',
+    text: '< WHITEPAPER >',
+  },
 ];
 
 export const scrollToTop = () => {
@@ -50,11 +62,31 @@ export const Footer = () => {
         <div className={styles.logoBlock}>
           <Logo className={styles.logo} />
           <div className={styles.policy}>
-            {TEXT_DATA.map((item, index) => {
+            {POLICY_DATA.map((item, index) => {
+              if (item.href.includes('https://')) {
+                return (
+                  <a
+                    key={index}
+                    href={item.href}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className={styles.policyText}
+                  >
+                    {item.text}
+                  </a>
+                );
+              }
+
               return (
-                <div key={index} className={styles.policyText}>
-                  {item}
-                </div>
+                <a
+                  key={index}
+                  href={`/files/${item.href}.pdf`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={styles.policyText}
+                >
+                  {item.text}
+                </a>
               );
             })}
           </div>
@@ -78,13 +110,42 @@ export const Footer = () => {
 
           <div className={styles.socialWrapper}>
             <Socials />
-            <ButtonIcon icon={<IconArrow />} onClick={scrollToTop}/>
+            <ButtonIcon icon={<IconArrow />} onClick={scrollToTop} />
           </div>
 
           <div className={styles.textBlock}>
-            <div className={styles.text}>&lt; PRIVACY POLICY &gt;</div>
-            <div className={styles.text}>&lt; SECURITY POLICY &gt;</div>
-            <div className={styles.text}>&lt; COOKIES POLICY &gt;</div>
+            <a
+              href='/files/privacy_policy.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.text}
+            >
+              &lt; PRIVACY POLICY &gt;
+            </a>
+            <a
+              href='/files/security_policy.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.text}
+            >
+              &lt; SECURITY POLICY &gt;
+            </a>
+            <a
+              href='/files/cookies_policy.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.text}
+            >
+              &lt; COOKIES POLICY &gt;
+            </a>
+            <a
+              href='https://whitepaper.aavault.io'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.text}
+            >
+              &lt; WHITEPAPER &gt;
+            </a>
           </div>
         </div>
       </div>
