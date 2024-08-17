@@ -48,3 +48,15 @@
     }
   }
 }
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.errorText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

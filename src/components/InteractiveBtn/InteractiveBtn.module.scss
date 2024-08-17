@@ -11,7 +11,7 @@
     @include mulish_700_24;
     width: 100%;
     background: var(--background-main);
-    
+
     @include respond(laptopL) {
       @include mulish_700_18;
       padding: 16px;
@@ -43,4 +43,15 @@
       }
     }
   }
+}
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.errorText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

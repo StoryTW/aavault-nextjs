@@ -36,6 +36,10 @@
         @include mulish_500_18;
         padding-top: 16px;
         color: var(--gray_5);
+
+        @include respond(mobile) {
+          width: 265px;
+        }
       }
     }
   }

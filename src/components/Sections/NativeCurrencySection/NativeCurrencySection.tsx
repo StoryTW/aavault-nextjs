@@ -69,7 +69,7 @@ export const NativeCurrencySection = () => {
           $AAVA IS THE ICONIC <span>currency</span>
         </h2>
         <div className={styles.description}>
-          Maximize your experience with the $AAVL token: enjoy exclusive access, reduced fees,
+          Maximize your experience with the $AAVA token: enjoy exclusive access, reduced fees,
           staking rewards, and DAO governance.
         </div>
       </div>

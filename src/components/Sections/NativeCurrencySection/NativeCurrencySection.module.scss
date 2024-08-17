@@ -47,6 +47,9 @@
       @include respond(laptopM) {
         @include mulish_1000_28;
       }
+      @include respond(mobile ) {
+        width: 270px;
+      }
 
       span {
         text-transform: uppercase;
