@@ -29,6 +29,7 @@ export const InteractiveBtn = () => {
       inputRef.current.value = '';
       setIsError(true);
       inputRef.current?.focus();
+      return;
     }
 
     sendMessageToTelegram(inputRef.current?.value);
