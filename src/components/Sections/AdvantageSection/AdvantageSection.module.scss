@@ -36,6 +36,9 @@
         @include mulish_1000_28;
         margin-bottom: 36px;
       }
+      @include respond(mobile) {
+        width: 245px;
+      }
 
       span {
         text-transform: uppercase;

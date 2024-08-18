@@ -9,9 +9,11 @@ import Logo from '@/app/icon32.png';
 export const FooterInput = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [isError, setIsError] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
   const handleFocus = async () => {
     setIsError(false);
+    setIsSuccess(false);
     const isEmail = String(inputRef.current?.value)
       .toLowerCase()
       .match(
@@ -30,6 +32,7 @@ export const FooterInput = () => {
     }
 
     sendMessageToTelegram(inputRef.current?.value);
+    setIsSuccess(true);
     inputRef.current.value = '';
   };
 
@@ -39,7 +42,10 @@ export const FooterInput = () => {
         <input
           ref={inputRef}
           className={styles.input}
-          onChange={() => setIsError(false)}
+          onChange={() => {
+            setIsSuccess(false);
+            setIsError(false);
+          }}
           type='email'
           placeholder='ENTER YOUR EMAIL'
           autoComplete='email'
@@ -48,11 +54,8 @@ export const FooterInput = () => {
           <IconArrow />
         </button>
       </div>
-      {isError && (
-        <div className={styles.errorText}>
-          <Image src={Logo} alt='' width={32} height={32} /> Oops! Check your email!
-        </div>
-      )}
+      {isError && <div className={styles.errorText}>Oops! Check your email!</div>}
+      {isSuccess && <div className={styles.errorText}>Gotcha. Welcome aboard, fam!</div>}
     </div>
   );
 };
