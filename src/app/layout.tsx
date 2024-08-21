@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-cards';
 import '@/assets/styles/index.scss';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const mulish = Mulish({ subsets: ['latin'] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
+      <GoogleAnalytics gaId='G-4PTRVLFR5Z'/>
     </html>
   );
 }

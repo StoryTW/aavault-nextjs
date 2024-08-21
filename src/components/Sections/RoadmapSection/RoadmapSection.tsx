@@ -63,7 +63,7 @@ const DATA = [
         text: '< Full version >',
       },
       {
-        text: '< Listings On CMC And CoinGecko >',
+        text: '< Listings on CMC and CoinGecko >',
       },
       {
         text: '< Tournaments >',
