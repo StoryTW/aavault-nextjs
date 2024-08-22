@@ -16,7 +16,7 @@ const DATA = [
     description: (
       <>AAVAULT enables liquidity access across multiple blockchains for seamless asset trading.</>
     ),
-    imageName: 'multi-blockchain',
+    imageName: 'multi-blockchain-2',
     area: 'multi',
   },
   {
@@ -34,7 +34,7 @@ const DATA = [
         Access to trading tools, including swaps, limit and TWAP orders, and unique other features.
       </>
     ),
-    imageName: 'tools',
+    imageName: 'tools-2',
     area: 'tools',
   },
 ];
