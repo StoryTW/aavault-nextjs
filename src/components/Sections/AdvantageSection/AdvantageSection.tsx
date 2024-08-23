@@ -34,7 +34,7 @@ const DATA = [
         Access to trading tools, including swaps, limit and TWAP orders, and unique other features.
       </>
     ),
-    imageName: 'tools',
+    imageName: 'tools-2',
     area: 'tools',
   },
 ];
@@ -68,7 +68,7 @@ export const AdvantageSection = () => {
                     src={`/images/advantages/${card.imageName}.svg`}
                     alt='service_example'
                     style={{
-                      objectFit: 'contain',
+                      objectFit: 'cover',
                     }}
                     sizes='100vw'
                     priority
