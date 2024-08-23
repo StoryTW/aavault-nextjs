@@ -34,7 +34,7 @@ const DATA = [
         Access to trading tools, including swaps, limit and TWAP orders, and unique other features.
       </>
     ),
-    imageName: 'tools-2',
+    imageName: 'tools',
     area: 'tools',
   },
 ];
