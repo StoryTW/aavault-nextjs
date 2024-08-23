@@ -68,7 +68,7 @@ export const AdvantageSection = () => {
                     src={`/images/advantages/${card.imageName}.svg`}
                     alt='service_example'
                     style={{
-                      objectFit: 'cover',
+                      objectFit: 'contain',
                     }}
                     sizes='100vw'
                     priority
