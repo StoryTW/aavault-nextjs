@@ -7,7 +7,7 @@
 
   .header {
     display: grid;
-    grid-template-columns: minmax(100px, 470px) minmax(100px, 658px) minmax(100px, 629px);
+    grid-template-columns: minmax(100px, 434px) minmax(100px, 658px) minmax(100px, 629px);
     margin-bottom: 24px;
 
     @media only screen and (width <= 1705px) {
@@ -68,9 +68,9 @@
   }
 
   .content {
-    padding-left: 480px;
+    padding-left: 434px;
     display: grid;
-    grid-template-columns: minmax(300px, 524px) 1fr;
+    grid-template-columns: minmax(300px, 546px) 1fr;
     gap: 180px;
 
     @media only screen and (width <= 1705px) {

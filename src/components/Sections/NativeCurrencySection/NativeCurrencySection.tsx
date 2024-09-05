@@ -5,58 +5,52 @@ import Image from 'next/image';
 
 const DATA = [
   {
+    id: 'preseed',
+    name: 'Pre-seed Round',
+    percent: '5% > TGE 5% > 12 month, Linear',
+    count: '50 Million',
+  },
+  {
     id: 'private',
     name: 'Private Round',
-    percent: '(4%)',
-    count: '400 Million',
-  },
-  {
-    id: 'marketing',
-    name: 'Marketing',
-    percent: '(5%)',
-    count: '500 Million',
-  },
-  {
-    id: 'dao',
-    name: 'DAO',
-    percent: '(6%)',
-    count: '600 Million',
+    percent: '10% > TGE 5% > 12 month, Linear',
+    count: '100 Million',
   },
   {
     id: 'liquidity',
     name: 'Liquidity',
-    percent: '(12%)',
-    count: '1.2 Billion',
+    percent: '(25%)',
+    count: '250 Million',
   },
   {
-    id: 'seria',
-    name: 'Seria A',
-    percent: '(12%)',
-    count: '1.2 Billion',
-  },
-  {
-    id: 'reserves',
-    name: 'Reserves',
-    percent: '(14%)',
-    count: '1.4 Billion',
+    id: 'eco',
+    name: 'Ecosystem & Community',
+    percent: '35%',
+    count: '350 Million',
   },
   {
     id: 'airdrop',
     name: 'Airdrop',
-    percent: '(15%)',
-    count: '1.5 Billion',
+    percent: '5%',
+    count: '50 Million',
   },
   {
-    id: 'foundations',
-    name: 'Foundations',
-    percent: '(16%)',
-    count: '1.6 Billion',
+    id: 'advisers',
+    name: 'Advisers',
+    percent: '2% > Cliff 6 month > 12 Month, Linear',
+    count: '20 Million',
+  },
+  {
+    id: 'partners',
+    name: 'Strategic Partners',
+    percent: '3% > TGE 5% > 12 Month, Linear',
+    count: '30 Million',
   },
   {
     id: 'team',
     name: 'Team & Advisers',
-    percent: '(16%)',
-    count: '1.6 Billion',
+    percent: '15% > TGE 0% > Cliff 6 month > 24 Month, Linear',
+    count: '150 Million',
   },
 ];
 
@@ -69,8 +63,8 @@ export const NativeCurrencySection = () => {
           $AAVA IS THE ICONIC <span>currency</span>
         </h2>
         <div className={styles.description}>
-          Maximize your experience with the $AAVA token: enjoy exclusive access, reduced fees,
-          staking rewards, and DAO governance.
+          Enhance your journey with the $AAVA token: indulge in exclusive access, reduced fees,
+          staking rewards, and participate in DAO governance
         </div>
       </div>
       <div className={styles.content}>

@@ -17,10 +17,10 @@ const DATA = [
     delay: 0.5,
     data: [
       {
-        text: '< Alpha version >',
+        text: '< Alpha Version >',
       },
       {
-        text: '< Blockchain integration >',
+        text: '< Blockchain Integration >',
       },
       {
         text: '< Waitlists >',
@@ -37,13 +37,10 @@ const DATA = [
     delay: 1.5,
     data: [
       {
-        text: '< Demo version >',
+        text: '< Demo Version >',
       },
       {
         text: '< Marketing >',
-      },
-      {
-        text: '< Airdrop >',
       },
     ],
   },
@@ -57,16 +54,13 @@ const DATA = [
     delay: 2.5,
     data: [
       {
-        text: '< New blockchain integration >',
+        text: '< New Blockchain Integration >',
       },
       {
-        text: '< Full version >',
+        text: '< Full Version >',
       },
       {
         text: '< Listings on CMC and CoinGecko >',
-      },
-      {
-        text: '< Tournaments >',
       },
     ],
   },
@@ -80,14 +74,14 @@ const DATA = [
     delay: 3.5,
     data: [
       {
-        text: '< DEX and CEX listings >',
+        text: '< DEX and CEX Listings >',
       },
       {
-        text: '< Staking >',
+        text: '< New Blockchain Integration >',
       },
       {
-        text: '< New blockchain integration >',
-      },
+        text: '< Staking, Perpertuals & Futures >'
+      }
     ],
   },
   {
@@ -100,10 +94,10 @@ const DATA = [
     delay: 2.1,
     data: [
       {
-        text: '< Mobile version >',
+        text: '< Mobile Version >',
       },
       {
-        text: '< NFT marketplace >',
+        text: '< NFT Marketplace >',
       },
       {
         text: '< Apps >',

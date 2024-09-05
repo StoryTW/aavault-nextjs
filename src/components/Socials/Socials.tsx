@@ -15,7 +15,7 @@ export const Socials = () => {
           <Image src={'/images/telegram.svg'} width={24} height={24} alt='telegram' />
         </ButtonLink>
 
-        <ButtonLink href={'https://discord.gg/FhXQgY3S'} target='_blank'>
+        <ButtonLink href={'https://discord.gg/JbXGfmdgWx'} target='_blank'>
           <Image src={'/images/discord.svg'} width={24} height={24} alt='discord' />
         </ButtonLink>
       </div>

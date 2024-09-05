@@ -2,40 +2,36 @@
   background: #191919;
   border-radius: 8px;
 
-  &.private {
+  &.preseed {
     border-left: 5px solid #19f9d1;
   }
 
-  &.marketing {
+  &.private {
     border-left: 5px solid #19f99b;
-  }
-
-  &.dao {
-    border-left: 5px solid #1ff634;
   }
 
   &.liquidity {
     border-left: 5px solid #7cfb89;
   }
 
-  &.seria {
+  &.eco {
     border-left: 5px solid #29d93b;
   }
 
-  &.reserves {
+  &.airdrop {
+    border-left: 5px solid #0cb990;
+  }
+
+  &.advisers {
     border-left: 5px solid #07fa94;
   }
 
-  &.airdrop {
-    border-left: 5px solid #19f99b;
-  }
-
-  &.foundations {
-    border-left: 5px solid #0cb990;
+  &.partners {
+    border-left: 5px solid #19f9f9;
   }
 
   &.team {
-    border-left: 5px solid #0cb990;
+    border-left: 5px solid #1ff634;
   }
 
   .wrapper {
@@ -53,6 +49,10 @@
         @include respond(laptopM) {
           @include mulish_600_16;
         }
+
+        @include respond(mobile) {
+          @include mulish_600_14;
+        }
       }
 
       .percent {
@@ -62,40 +62,40 @@
           @include mulish_700_14;
         }
 
+        @include respond(mobile) {
+          @include mulish_600_12;
+        }
+
+        &.preseed {
+          color: #19f9d1;
+        }
+
         &.private {
-          color: #1ff668;
+          color: #19f99b;
         }
-  
-        &.marketing {
-          color: #07fa94;
-        }
-  
-        &.dao {
-          color: #0cb990;
-        }
-  
+
         &.liquidity {
-          color: #19f9f9;
+          color: #7cfb89;
         }
-  
-        &.seria {
-          color: #19f9f9;
+
+        &.eco {
+          color: #29d93b;
         }
-  
-        &.reserves {
-          color: #1ff668;
-        }
-  
+
         &.airdrop {
-          color: #19f9f9;
-        }
-  
-        &.foundations {
           color: #0cb990;
         }
-  
-        &.team {
+
+        &.advisers {
           color: #07fa94;
+        }
+
+        &.partners {
+          color: #19f9f9;
+        }
+
+        &.team {
+          color: #1ff634;
         }
       }
     }
@@ -103,6 +103,10 @@
     .count {
       @include mulish_500_18;
       color: var(--gray_2);
+
+      @include respond(mobile) {
+        @include mulish_600_14;
+      }
     }
   }
 }
