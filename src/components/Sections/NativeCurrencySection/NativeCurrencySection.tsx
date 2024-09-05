@@ -84,7 +84,7 @@ export const NativeCurrencySection = () => {
         </ul>
         <div className={styles.image}>
           <Image
-            src={'/images/circle.png'}
+            src={'/images/tokenomicsCircle.png'}
             width={629}
             height={629}
             alt='diagram'
