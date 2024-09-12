@@ -12,7 +12,7 @@ const DATA = [
   },
   {
     id: 'private',
-    name: 'Private Round',
+    name: 'Seed Round',
     percent: '10% > TGE 5% > 12 month, Linear',
     count: '100 Million',
   },
@@ -37,7 +37,7 @@ const DATA = [
   {
     id: 'advisers',
     name: 'Advisers',
-    percent: '2% > Cliff 6 month > 12 Month, Linear',
+    percent: '2% > TGE 0% > Cliff 6 month > 12 Month, Linear',
     count: '20 Million',
   },
   {
@@ -48,7 +48,7 @@ const DATA = [
   },
   {
     id: 'team',
-    name: 'Team & Advisers',
+    name: 'Team',
     percent: '15% > TGE 0% > Cliff 6 month > 24 Month, Linear',
     count: '150 Million',
   },

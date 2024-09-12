@@ -28,7 +28,7 @@ export const MainSection = () => {
         transition={{ duration: 2 }}
       >
         <h1 className={styles.title}>
-          GET EASY TO
+          GET ACCESS TO
           <br />
           OVER $BILLION
         </h1>

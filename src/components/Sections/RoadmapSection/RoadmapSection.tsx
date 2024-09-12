@@ -54,10 +54,10 @@ const DATA = [
     delay: 2.5,
     data: [
       {
-        text: '< New Blockchain Integration >',
+        text: '< Full Version >',
       },
       {
-        text: '< Full Version >',
+        text: '< New Blockchain Integration >',
       },
       {
         text: '< Listings on CMC and CoinGecko >',
