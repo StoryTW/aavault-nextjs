@@ -101,6 +101,7 @@
     }
 
     .count {
+      white-space: nowrap;
       @include mulish_500_18;
       color: var(--gray_2);
 

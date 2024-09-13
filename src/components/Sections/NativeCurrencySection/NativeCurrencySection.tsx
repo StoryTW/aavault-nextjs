@@ -35,16 +35,16 @@ const DATA = [
     count: '50 Million',
   },
   {
-    id: 'advisers',
-    name: 'Advisers',
-    percent: '2% > TGE 0% > Cliff 6 month > 12 Month, Linear',
-    count: '20 Million',
-  },
-  {
     id: 'partners',
     name: 'Strategic Partners',
     percent: '3% > TGE 5% > 12 Month, Linear',
     count: '30 Million',
+  },
+  {
+    id: 'advisers',
+    name: 'Advisers',
+    percent: '2% > TGE 0% > Cliff 6 month > 12 Month, Linear',
+    count: '20 Million',
   },
   {
     id: 'team',
