@@ -62,7 +62,7 @@
     .newWay {
       @include mulish_1000_130;
       text-transform: uppercase;
-      @include gradientText;
+      color: var(--green-main);
       font-size: 100px;
       padding-right: 10px;
 

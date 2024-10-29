@@ -1,6 +1,6 @@
 .btnLink {
   border-radius: 8px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--white-dynamic);
   display: flex;
   align-items: center;
   padding: 14px;
@@ -9,16 +9,16 @@
 
   &.black {
     background: var(--background-main);
-    color: var(--white);
+    color: var(--white-dynamic);
   }
 
   &.white {
-    background: var(--white);
+    background: var(--white-dynamic);
     color: var(--background-main);
   }
 
   &:hover {
-    background: var(--green);
+    background: var(--green-main);
     color: var(--background-main);
     @include transition;
   }

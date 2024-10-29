@@ -42,11 +42,7 @@
       .policy {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px 64px;
-
-        @include respond(laptopXL) {
-          gap: 30px;
-        }
+        gap: 30px;
 
         @include respond(laptopM) {
           display: none;
@@ -86,7 +82,8 @@
 
         span {
           text-transform: uppercase;
-          @include gradientText;
+          // @include gradientText;
+          color: var(--green-main);
         }
       }
     }
@@ -121,13 +118,12 @@
         align-items: center;
         justify-content: space-between;
         
-        .socials {
+        .themesWrapper {
           display: flex;
           align-items: center;
           gap: 16px;
         }
       }
-
 
       .textBlock {
         display: none;

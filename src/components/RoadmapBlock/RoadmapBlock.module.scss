@@ -6,7 +6,8 @@
     z-index: 3;
 
     .title {
-      @include gradientText;
+      // @include gradientText;
+      color: var(--green-main);
       display: inline-block;
       @include mulish_900_34;
       margin-bottom: 16px;
@@ -19,7 +20,7 @@
       min-height: 16px;
       width: 16px;
       height: 16px;
-      background: var(--gradient_green);
+      background: var(--green-main);
       border-radius: 50%;
       left: 64px;
       bottom: -8px;
@@ -65,7 +66,7 @@
   min-height: 16px;
   width: 16px;
   height: 16px;
-  background: var(--gradient_green);
+  background: var(--green-main);
   border-radius: 50%;
   left: 64px;
 }

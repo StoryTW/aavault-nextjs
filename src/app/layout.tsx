@@ -1,15 +1,18 @@
 import type { Metadata } from 'next';
-import { Mulish } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import { ReactNode } from 'react';
 import { Header } from '@/layout/Header/Header';
 import { Footer } from '@/layout/Footer/Footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { Providers } from '@/providers/Providers';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-cards';
 import '@/assets/styles/index.scss';
-import { GoogleAnalytics } from '@next/third-parties/google';
 
-const mulish = Mulish({ subsets: ['latin'] });
+const montserrat = Montserrat({
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -22,15 +25,17 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={mulish.className}>
-        <div className='container'>
-          <Header />
-          {children}
-          <Footer />
-        </div>
-      </body>
+    <html lang='en' suppressHydrationWarning>
       <GoogleAnalytics gaId='G-4PTRVLFR5Z'/>
+      <body className={montserrat.className}>
+        <Providers>
+          <div className='container'>
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 }

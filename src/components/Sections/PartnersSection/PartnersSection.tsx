@@ -29,7 +29,7 @@ const DATA = [
   },
 ];
 
-export const PartnersSection = () => {
+export const  PartnersSection = () => {
   return (
     <section className={styles.partners}>
       <div className={styles.header}>

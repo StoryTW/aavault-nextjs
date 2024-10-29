@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { Suspense } from 'react';
 import styles from './Footer.module.scss';
 import { Logo } from '@/components/Logo/Logo';
 import { FooterInput } from '@/components/FooterInput/FooterInput';
@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Socials } from '@/components/Socials/Socials';
 import IconArrow from '@/assets/images/icon-arrow-up.svg';
 import { ButtonIcon } from '@/components/ui/ButtonIcon/ButtonIcon';
+import { ButtonTheme } from '@/components/ui/ButtonTheme/ButtonTheme';
 
 export const NAV_DATA = [
   {
@@ -110,7 +111,10 @@ export const Footer = () => {
 
           <div className={styles.socialWrapper}>
             <Socials />
-            <ButtonIcon icon={<IconArrow />} onClick={scrollToTop} />
+            <div className={styles.themesWrapper}>
+              <ButtonTheme />
+              <ButtonIcon icon={<IconArrow />} onClick={scrollToTop} />
+            </div>
           </div>
 
           <div className={styles.textBlock}>

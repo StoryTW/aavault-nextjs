@@ -5,7 +5,8 @@
     padding-bottom: 36px;
 
     .title {
-      @include gradientText;
+      // @include gradientText;
+      color: var(--green-main);
       display: inline-block;
       @include mulish_900_20;
       margin-bottom: 12px;
@@ -51,7 +52,7 @@
     min-height: 12px;
     width: 12px;
     height: 12px;
-    background: var(--gradient_green);
+    background: var(--green-main);
     border-radius: 50%;
   }
 

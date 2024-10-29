@@ -3,8 +3,8 @@ import React, { useRef, useState } from 'react';
 import styles from './InteractiveBtn.module.scss';
 import IconArrow from '@/assets/images/arrow.svg';
 import sendMessageToTelegram from '@/utils/sendMessageToTelegram';
-import Logo from '@/app/icon32.png';
-import Image from 'next/image';
+// import Logo from '@/app/icon32.png';
+// import Image from 'next/image';
 
 export const InteractiveBtn = () => {
   const inputRef = useRef<HTMLInputElement>(null);
