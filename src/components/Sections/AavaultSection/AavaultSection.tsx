@@ -3,12 +3,15 @@ import React from 'react';
 import styles from './AavaultSection.module.scss';
 import { AavaultSwiper } from '@/components/AavaultSwiper/AavaultSwiper';
 // import { motion, useScroll, useTransform } from 'framer-motion';
-// import { useHydrated } from '@/hooks/useHydrated';
+import { useHydrated } from '@/hooks/useHydrated';
 // import { useMediaQuery } from 'react-responsive';
 
 const VIDEO_DATA: IVideoData[] = [
+  // {
+  //   name: '1_Shield',
+  // },
   {
-    name: '1_Shield',
+    name: 'coin_video',
   },
   // {
   //   name: '2_Defend',
@@ -22,7 +25,7 @@ const VIDEO_DATA: IVideoData[] = [
 ];
 
 export const AavaultSection = () => {
-  // const hasHydrated = useHydrated();
+  const hasHydrated = useHydrated();
   // const ref = useRef(null);
 
   // const isTablet = useMediaQuery({ query: '(max-width: 838px)' });
@@ -34,9 +37,9 @@ export const AavaultSection = () => {
 
   // const fontSize = useTransform(scrollYProgress, [0, 1], ['32px', '336px']);
 
-  // if (!hasHydrated) {
-  //   return null;
-  // }
+  if (!hasHydrated) {
+    return null;
+  }
 
   return (
     // <section className={styles.aavaultSection} ref={ref}>
@@ -73,7 +76,7 @@ export const AavaultSection = () => {
         )} */}
 
         <div className={styles.tabletContent}>
-          <span className={styles.title}>AAVAULT</span>
+          <span className={styles.title}>PALMA</span>
           <div className={styles.catalog}>
             <AavaultSwiper data={VIDEO_DATA} />
           </div>

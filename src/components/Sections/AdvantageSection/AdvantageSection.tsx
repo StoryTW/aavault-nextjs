@@ -1,12 +1,17 @@
+'use client';
 import React from 'react';
 import styles from './AdvantageSection.module.scss';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
 
 const DATA = [
   {
     title: 'UNIQUE CUSTOMIZATIONS',
     description: (
-      <>Enjoy complete freedom with unique trading settings, allowing full transaction control.</>
+      <>
+        We offer unique trading settings that allow each user to experience complete freedom of
+        choice and manage their transactions independently.
+      </>
     ),
     imageName: 'uniq',
     area: 'uniq',
@@ -14,7 +19,10 @@ const DATA = [
   {
     title: 'Blockchain Integration',
     description: (
-      <>AAVAULT enables liquidity access across multiple blockchains for seamless asset trading.</>
+      <>
+        Palma Network provides multi-blockchain integration, enabling traders to access
+        cross-network liquidity and trade various assets seamlessly, all in one platform.
+      </>
     ),
     imageName: 'multi-blockchain-2',
     area: 'multi',
@@ -22,7 +30,10 @@ const DATA = [
   {
     title: 'Speedy Transactions',
     description: (
-      <>Advanced smart contracts provide the quickest routes for fast transaction completion.</>
+      <>
+        Rapid transaction processing is achieved through advanced smart contracts that automatically
+        select the best routes for completing transactions in the shortest possible time.
+      </>
     ),
     imageName: 'rapid',
     area: 'rapid',
@@ -31,7 +42,9 @@ const DATA = [
     title: 'Distinctive tools',
     description: (
       <>
-        Access to trading tools, including swaps, limit and TWAP orders, and unique other features.
+        Palma Network provides a robust suite of AI-based tools, including swap, limit, split, and
+        twap orders, along with cross-chain capabilities, own rollups, real-time market analysis and
+        much more.
       </>
     ),
     imageName: 'tools',
@@ -40,12 +53,14 @@ const DATA = [
 ];
 
 export const AdvantageSection = () => {
+  const { theme } = useTheme();
+
   return (
     <section id='benefits' className={styles.advantage}>
       <div className={styles.titleWrapper}>
         <div className={styles.caption}>&lt; Benefits &gt;</div>
         <h2 className={styles.title}>
-          Discover the <span>advantages</span> of AAVAULT
+          Discover the <span>advantages</span> of PALMA
         </h2>
       </div>
       <div className={styles.wrapper}>
@@ -65,7 +80,11 @@ export const AdvantageSection = () => {
                 </div>
                 <div className={styles.imageDesktop}>
                   <Image
-                    src={`/images/advantages/${card.imageName}.svg`}
+                    src={
+                      theme === 'dark'
+                        ? `/images/advantages/${card.imageName}.svg`
+                        : `/images/advantages/${card.imageName}-white.svg`
+                    }
                     alt='service_example'
                     style={{
                       objectFit: 'contain',

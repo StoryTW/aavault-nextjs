@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import styles from './MainPage.module.scss';
 import { MainSection } from '@/components/Sections/MainSection/MainSection';
 import { FaqSection } from '@/components/Sections/FaqSection/FaqSection';
@@ -18,7 +18,7 @@ export const MainPage = () => {
 
       <AdvantageSection />
 
-      <AavaultSection /> 
+      <AavaultSection />
 
       <NativeCurrencySection />
 

@@ -42,7 +42,7 @@
 
       span {
         text-transform: uppercase;
-        @include gradientText;
+        color: var(--green-main);
       }
     }
   }

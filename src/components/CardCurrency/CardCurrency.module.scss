@@ -40,6 +40,10 @@
     justify-content: space-between;
     align-items: center;
 
+    // @include respond(mobile) {
+    //   gap: 24px;
+    // }
+
     .nameInfo {
       .name {
         @include mulish_600_18;

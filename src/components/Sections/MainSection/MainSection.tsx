@@ -28,27 +28,27 @@ export const MainSection = () => {
         transition={{ duration: 2 }}
       >
         <h1 className={styles.title}>
-          GET ACCESS TO
+          DISCOVER DEX
           <br />
-          OVER $BILLION
+          TRADING IN A
         </h1>
-        <div className={styles.aavault}>&lt;AAVAULT&gt;</div>
-        <div className={styles.newWay}>LIQUIDITY</div>
+        <div className={styles.aavault}>&lt;PALMA&gt;</div>
+        <div className={styles.newWay}>NEW WAY</div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         ref={refInfo}
-        className={styles.info} 
+        className={styles.info}
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: inViewInfo ? 1 : 0, y: inViewInfo ? 0 : 40 }}
         transition={{ duration: 0.7 }}
       >
         <div className={styles.content}>
-          AAVAULT is revolutionizing decentralized
+          Palma Network is revolutionizing DeFi by
           <br />
-          exchanges (DEX) by incorporating the finest
+          implementing the best tools to improve the
           <br />
-          trading tools available
+          user experience.
         </div>
 
         <InteractiveBtn />
