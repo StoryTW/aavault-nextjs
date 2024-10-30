@@ -60,11 +60,12 @@ export const NativeCurrencySection = () => {
       <div className={styles.header}>
         <div className={styles.caption}>&lt; Token and tokenomics &gt;</div>
         <h2 className={styles.title}>
-          $AAVA IS THE ICONIC <span>currency</span>
+          $PALMA IS THE ICONIC <span>currency</span>
         </h2>
         <div className={styles.description}>
-          Enhance your journey with the $AAVA token: indulge in exclusive access, reduced fees,
-          staking rewards, and participate in DAO governance
+          Maximize your experience with the $PALMA token: enjoy exclusive access, reduced fees,
+          staking rewards, and DAO governance. Join the whitelist for a chance to be part of our
+          journey.
         </div>
       </div>
       <div className={styles.content}>

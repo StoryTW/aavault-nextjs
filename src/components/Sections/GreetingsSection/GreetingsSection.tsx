@@ -1,18 +1,15 @@
 'use client';
-import React, { Suspense, useRef } from 'react';
+import React, { useRef } from 'react';
 import styles from './GreetingsSection.module.scss';
-import Image from 'next/image';
 import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 import { GreetingsMobileText } from '@/components/GreetingsMobileText/GreetingsMobileText';
 import { motion, useInView } from 'framer-motion';
-import { useTheme } from 'next-themes';
+import IconPalmaWhite from '@/assets/images/icon-palma.svg';
 
 export const GreetingsSection = () => {
   const refTitle = useRef(null);
   const refImage = useRef(null);
   const refDescription = useRef(null);
-
-  const { theme } = useTheme();
 
   const inViewTitle = useInView(refTitle, {
     once: false,
@@ -25,8 +22,6 @@ export const GreetingsSection = () => {
   const inViewDescription = useInView(refDescription, {
     once: false,
   });
-
-  console.log(theme, 'theme');
 
   return (
     <section id='about' className={styles.greetings}>
@@ -53,48 +48,9 @@ export const GreetingsSection = () => {
             animate={{ opacity: inViewImage ? 1 : 0, y: inViewImage ? 0 : 40 }}
             transition={{ duration: 0.7 }}
           >
-            {theme === 'dark' ? (
-              <Image
-                src='/images/icon-palma.svg'
-                height={510}
-                width={427}
-                alt='robot'
-                sizes='100vw'
-                priority
-                quality={100}
-                style={{
-                  height: 'auto',
-                  width: '100%',
-                }}
-              />
-            ) : (
-              <Image
-                src='/images/icon-palma-black.svg'
-                height={510}
-                width={427}
-                alt='robot'
-                sizes='100vw'
-                priority
-                quality={100}
-                style={{
-                  height: 'auto',
-                  width: '100%',
-                }}
-              />
-            )}
-            {/* <Image
-              src={theme === 'dark' ? '/images/icon-palma.svg' : '/images/icon-palma-black.svg'}
-              height={510}
-              width={427}
-              alt='robot'
-              sizes='100vw'
-              priority
-              quality={100}
-              style={{
-                height: 'auto',
-                width: '100%',
-              }}
-            /> */}
+            <div className={styles.icon}>
+              <IconPalmaWhite />
+            </div>
           </motion.div>
         </div>
         <div className={styles.description}>
@@ -118,7 +74,7 @@ export const GreetingsSection = () => {
             <GreetingsMobileText />
 
             <ButtonLink
-              href='https://whitepaper.aavault.io'
+              href='https://whitepaper.palma.network'
               target='_blank'
               className={styles.link}
             >

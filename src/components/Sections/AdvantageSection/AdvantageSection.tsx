@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './AdvantageSection.module.scss';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import { useHydrated } from '@/hooks/useHydrated';
 
 const DATA = [
   {
@@ -13,7 +14,7 @@ const DATA = [
         choice and manage their transactions independently.
       </>
     ),
-    imageName: 'uniq',
+    imageName: 'uniq-3',
     area: 'uniq',
   },
   {
@@ -53,7 +54,11 @@ const DATA = [
 ];
 
 export const AdvantageSection = () => {
+  const hasHydrated = useHydrated();
+
   const { theme } = useTheme();
+
+  if (!hasHydrated) return null;
 
   return (
     <section id='benefits' className={styles.advantage}>

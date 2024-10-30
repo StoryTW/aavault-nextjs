@@ -5,7 +5,6 @@
     padding-bottom: 36px;
 
     .title {
-      // @include gradientText;
       color: var(--green-main);
       display: inline-block;
       @include mulish_900_20;
@@ -13,7 +12,7 @@
     }
 
     .block {
-      background-color: var(--bg_19);
+      background-color: var(--bg_19_dynamic);
       padding: 16px;
       border-radius: 8px;
       width: 100%;

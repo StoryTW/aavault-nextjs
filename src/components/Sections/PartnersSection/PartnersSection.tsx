@@ -1,6 +1,9 @@
+'use client';
 import React from 'react';
 import styles from './PartnersSection.module.scss';
 import Image from 'next/image';
+import { useHydrated } from '@/hooks/useHydrated';
+import { useTheme } from 'next-themes';
 
 const DATA = [
   {
@@ -29,7 +32,13 @@ const DATA = [
   },
 ];
 
-export const  PartnersSection = () => {
+export const PartnersSection = () => {
+  const hasHydrated = useHydrated();
+
+  const { theme } = useTheme();
+
+  if (!hasHydrated) return null;
+
   return (
     <section className={styles.partners}>
       <div className={styles.header}>
@@ -44,7 +53,11 @@ export const  PartnersSection = () => {
             <div key={index} className={styles.card}>
               <div className={styles.imageWrapper}>
                 <Image
-                  src={`/images/partners/${card.source}.svg`}
+                  src={
+                    theme === 'dark'
+                      ? `/images/partners/${card.source}.svg`
+                      : `/images/partners/${card.source}-black.svg`
+                  }
                   alt={card.source}
                   fill
                   style={{

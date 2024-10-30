@@ -9,17 +9,17 @@ export const Socials = () => {
   return (
     <div className={styles.socials}>
       <div className={styles.wrapper}>
-        <ButtonLink href={'https://twitter.com/AAVAULT_IO'} target='_blank'>
+        <ButtonLink href={' https://x.com/palma_network'} target='_blank'>
           <IconTwitter />
         </ButtonLink>
 
-        <ButtonLink href={'https://t.me/aavault'} target='_blank'>
+        <ButtonLink href={'https://t.me/palma_network'} target='_blank'>
           <IconTelegram />
         </ButtonLink>
 
-        <ButtonLink href={'https://discord.gg/JbXGfmdgWx'} target='_blank'>
+        {/* <ButtonLink href={'https://discord.gg/JbXGfmdgWx'} target='_blank'>
           <IconDiscord />
-        </ButtonLink>
+        </ButtonLink> */}
       </div>
     </div>
   );

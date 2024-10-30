@@ -42,7 +42,7 @@ const POLICY_DATA = [
     text: '< COOKIES POLICY >',
   },
   {
-    href: 'https://whitepaper.aavault.io',
+    href: 'https://whitepaper.palma.network',
     text: '< WHITEPAPER >',
   },
 ];
@@ -143,7 +143,7 @@ export const Footer = () => {
               &lt; COOKIES POLICY &gt;
             </a>
             <a
-              href='https://whitepaper.aavault.io'
+              href='https://whitepaper.palma.network'
               target='_blank'
               rel='noopener noreferrer'
               className={styles.text}

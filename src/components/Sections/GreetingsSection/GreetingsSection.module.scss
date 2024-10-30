@@ -99,6 +99,16 @@
           width: 197px;
           height: 232px;
         }
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            color: var(--white-dynamic);
+          }
+        }
       }
     }
 
