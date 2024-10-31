@@ -75,16 +75,17 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--bg_15);
+    background: var(--background-main);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--green-main);
+    background: var(--bg_15);
     border-radius: 2.5px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--green-main);
+    // background: var(--green-main);
+    opacity: 0.5;
   }
 }
 
