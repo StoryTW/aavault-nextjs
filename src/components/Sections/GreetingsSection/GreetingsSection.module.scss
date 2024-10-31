@@ -84,20 +84,21 @@
       .robotWrapper {
         margin: 40px 54px;
         padding: 12px;
-        max-width: 427px;
-        max-height: 510px;
-        width: 427px;
-        height: 510px;
+        // max-width: 427px;
+        // max-height: 510px;
+        // width: 427px;
+        // height: 510px;
 
         @include respond(laptopXL) {
           margin: 40px 0px 40px;
         }
 
         @include respond(laptopM) {
-          max-width: 197px;
-          max-height: 232px;
-          width: 197px;
-          height: 232px;
+          padding: 0px;
+          // max-width: 197px;
+          // max-height: 232px;
+          // width: 197px;
+          // height: 232px;
         }
 
         .icon {
@@ -107,6 +108,13 @@
 
           svg {
             color: var(--white-dynamic);
+          }
+
+          @include respond(laptopM) {
+            svg {
+            width: 197px;
+            height: 232px;
+            }
           }
         }
       }

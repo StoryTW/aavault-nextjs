@@ -4,6 +4,7 @@ import styles from './AavaultSection.module.scss';
 import { AavaultSwiper } from '@/components/AavaultSwiper/AavaultSwiper';
 // import { motion, useScroll, useTransform } from 'framer-motion';
 import { useHydrated } from '@/hooks/useHydrated';
+import { useTheme } from 'next-themes';
 // import { useMediaQuery } from 'react-responsive';
 
 const VIDEO_DATA: IVideoData[] = [
@@ -11,7 +12,7 @@ const VIDEO_DATA: IVideoData[] = [
   //   name: '1_Shield',
   // },
   {
-    name: 'coin_video',
+    name: 'coin',
   },
   // {
   //   name: '2_Defend',
@@ -26,6 +27,7 @@ const VIDEO_DATA: IVideoData[] = [
 
 export const AavaultSection = () => {
   const hasHydrated = useHydrated();
+
   // const ref = useRef(null);
 
   // const isTablet = useMediaQuery({ query: '(max-width: 838px)' });

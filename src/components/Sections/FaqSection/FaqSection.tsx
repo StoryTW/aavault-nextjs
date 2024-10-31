@@ -8,22 +8,22 @@ import Image from 'next/image';
 const DATA: IFaqModel[] = [
   {
     id: '<01>',
-    question: 'What is the AAVAULT?',
+    question: 'What is the PALMA?',
     answer: 'A multi-blockchain DeFi platform with integrated security and efficiency features.',
   },
   {
     id: '<02>',
-    question: 'What tools does AAVAULT offer?',
+    question: 'What tools does PALMA offer?',
     answer: 'Various types of swap, such as TWAP Swap, transfer, orders with SL and TP, and more.',
   },
   {
     id: '<03>',
     question: 'Supported Blockchains?',
-    answer: 'AAVAULT supports multiple blockchains, enabling diverse trading options.',
+    answer: 'PALMA supports multiple blockchains, enabling diverse trading options.',
   },
   {
     id: '<04>',
-    question: '$AAVA Holder Benefits?',
+    question: '$PALMA Holder Benefits?',
     answer: 'Holders get trading fee discounts, staking rewards, and exclusive bonuses.',
   },
 ];

@@ -75,16 +75,16 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    background: black;
+    background: var(--black-dynamic);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--background-main);
+    background: var(--green-main);
     border-radius: 2.5px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--black_12);
+    background: var(--green-main);
   }
 }
 

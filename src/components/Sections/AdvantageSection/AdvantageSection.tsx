@@ -14,7 +14,7 @@ const DATA = [
         choice and manage their transactions independently.
       </>
     ),
-    imageName: 'uniq-3',
+    imageName: 'uniq',
     area: 'uniq',
   },
   {
@@ -25,7 +25,7 @@ const DATA = [
         cross-network liquidity and trade various assets seamlessly, all in one platform.
       </>
     ),
-    imageName: 'multi-blockchain-2',
+    imageName: 'multi-blockchain',
     area: 'multi',
   },
   {
@@ -101,8 +101,12 @@ export const AdvantageSection = () => {
                 </div>
                 <div className={styles.imageTablet}>
                   <Image
-                    src={`/images/advantages/${card.imageName}_mob.svg`}
-                    alt='service_example'
+                    src={
+                      theme === 'dark'
+                        ? `/images/advantages/${card.imageName}_mob.svg`
+                        : `/images/advantages/${card.imageName}_mob-white.svg`
+                    }
+                    alt={card.imageName}
                     style={{
                       objectFit: 'contain',
                     }}

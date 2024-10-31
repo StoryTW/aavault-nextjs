@@ -9,7 +9,7 @@
     width: 100vw;
     height: calc(100% - 138px);
     z-index: 3;
-    background: #000000;
+    background: var(--background-main);
 
     @include respond(mobileL) {
       padding: 16px 12px;

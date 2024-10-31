@@ -1,7 +1,10 @@
+'use client'
 import React from 'react';
 import styles from './NativeCurrencySection.module.scss';
 import { CardCurrency } from '@/components/CardCurrency/CardCurrency';
 import Image from 'next/image';
+import { useHydrated } from '@/hooks/useHydrated';
+import { useTheme } from 'next-themes';
 
 const DATA = [
   {
@@ -55,6 +58,12 @@ const DATA = [
 ];
 
 export const NativeCurrencySection = () => {
+  const hasHydrated = useHydrated();
+
+  const { theme } = useTheme();
+
+  if (!hasHydrated) return null;
+
   return (
     <section id='tokenomics' className={styles.nativeCurrency}>
       <div className={styles.header}>
@@ -85,7 +94,7 @@ export const NativeCurrencySection = () => {
         </ul>
         <div className={styles.image}>
           <Image
-            src={'/images/tokenomicsCircle.webp'}
+            src={theme === 'dark' ? '/images/circle.svg' : '/images/circle-white.svg'}
             width={629}
             height={629}
             alt='diagram'

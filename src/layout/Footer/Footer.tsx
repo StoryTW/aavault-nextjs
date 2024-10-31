@@ -30,15 +30,15 @@ export const NAV_DATA = [
 
 const POLICY_DATA = [
   {
-    href: 'privacy_policy',
+    href: 'privacy',
     text: '< PRIVACY POLICY >',
   },
   {
-    href: 'security_policy',
+    href: 'security',
     text: '< SECURITY POLICY >',
   },
   {
-    href: 'cookies_policy',
+    href: 'cookies',
     text: '< COOKIES POLICY >',
   },
   {
@@ -81,7 +81,7 @@ export const Footer = () => {
               return (
                 <a
                   key={index}
-                  href={`/files/${item.href}.pdf`}
+                  href={`/docs/${item.href}.pdf`}
                   target='_blank'
                   rel='noopener noreferrer'
                   className={styles.policyText}
@@ -119,7 +119,7 @@ export const Footer = () => {
 
           <div className={styles.textBlock}>
             <a
-              href='/files/privacy_policy.pdf'
+              href='/docs/privacy.pdf'
               target='_blank'
               rel='noopener noreferrer'
               className={styles.text}
@@ -127,7 +127,7 @@ export const Footer = () => {
               &lt; PRIVACY POLICY &gt;
             </a>
             <a
-              href='/files/security_policy.pdf'
+              href='/docs/security.pdf'
               target='_blank'
               rel='noopener noreferrer'
               className={styles.text}
@@ -135,7 +135,7 @@ export const Footer = () => {
               &lt; SECURITY POLICY &gt;
             </a>
             <a
-              href='/files/cookies_policy.pdf'
+              href='/docs/cookies.pdf'
               target='_blank'
               rel='noopener noreferrer'
               className={styles.text}
