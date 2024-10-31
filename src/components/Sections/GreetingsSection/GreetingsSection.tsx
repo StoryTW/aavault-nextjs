@@ -35,7 +35,7 @@ export const GreetingsSection = () => {
             animate={{ opacity: inViewTitle ? 1 : 0, y: inViewTitle ? 0 : 40 }}
             transition={{ duration: 0.7 }}
           >
-            Palma Network -
+            Palma Network —
             <br />
             AI-Driven Multi-Blockchain Trading Platform
           </motion.h2>
@@ -62,7 +62,7 @@ export const GreetingsSection = () => {
             transition={{ duration: 0.7 }}
           >
             <div className={styles.text}>
-              Palma Network is a next-gen multi-blockchain trading platform that combines AI-powered
+              Palma Network is a next-gen multi-blockchain trading platform that combines AI-Powered
               tools with advanced trading options for secure, efficient transactions.
               <br />
               <br />

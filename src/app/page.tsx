@@ -1,13 +1,14 @@
 import { MainPage } from '@/pageComponents/MainPage/MainPage';
 import type { Metadata } from 'next';
 
-const title = 'PALMA | AI-Powered Multi-Blockchain DeFi Platform';
+const title = 'Palma Network | AI-Powered Multi-Blockchain DeFi Platform';
 
 const description =
-  'Palma is a AI-powered multi-blockchain DeFi trading platform offering secure and efficient trading operations. Join us to access powerful DeFi tools.';
+  'Palma Network is a AI-powered multi-blockchain DeFi trading platform offering secure and efficient trading operations. Join us to access powerful DeFi tools.';
 
 const keywords = [
   'Palma',
+  'Network',
   'cryptocurrency',
   'blockchain',
   'DeFi',

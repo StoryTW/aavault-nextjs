@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'AAVAULT',
-    short_name: 'AAVAULT',
+    name: 'Palma Network',
+    short_name: 'PALMA',
     description: 'Multi-blockchain platform',
     start_url: '/',
     display: 'standalone',
