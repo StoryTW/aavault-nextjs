@@ -1,13 +1,13 @@
 import { TradePage } from '@/pageComponents/TradePage/TradePage';
 import type { Metadata } from 'next';
 
-const title = 'AAVAULT | Multi-Blockchain DeFi Trading Platform';
+const title = 'PALMA | AI-Powered Multi-Blockchain DeFi Platform';
 
 const description =
-  'AAVAULT is a multi-blockchain DeFi trading platform offering secure and efficient trading operations. Join us to access powerful DeFi tools.';
+  'Palma is a AI-powered multi-blockchain DeFi trading platform offering secure and efficient trading operations. Join us to access powerful DeFi tools.';
 
 const keywords = [
-  'AAVAULT',
+  'Palma',
   'cryptocurrency',
   'blockchain',
   'DeFi',
@@ -25,15 +25,15 @@ export const metadata: Metadata = {
     title: title,
     description: description,
     type: 'website',
-    siteName: 'AAVAULT',
-    url: 'https://aavault.io/trade',
+    siteName: 'Palma',
+    url: 'https://palma.network/trade',
     images: { url: '/images/opengraph.png' },
   },
   twitter: {
     title: title,
     card: 'summary_large_image',
     description: description,
-    images: { url: '/images/opengraph.png', alt: 'aavault_image' },
+    images: { url: '/images/opengraph.png', alt: 'palma_image' },
   },
 };
 

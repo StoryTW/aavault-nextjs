@@ -22,7 +22,7 @@
     .line {
       height: 2px;
       width: 20px;
-      background: var(--white);
+      background: var(--white-dynamic);
       position: absolute;
       @include transition;
 

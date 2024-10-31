@@ -25,7 +25,7 @@ textarea {
 
   &:focus {
     background: initial;
-    border: 0;
+    border: none;
     outline: none;
   }
 }
@@ -57,8 +57,8 @@ button:focus {
 
 body {
   margin: 0;
-  background: black;
-  color: var(--white);
+  background: var(--background-main);
+  color: var(--white-dynamic);
   position: relative;
   min-height: 100vh;
   line-height: 1.15; /* 1 */
@@ -68,22 +68,23 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  @include transition;
 
   &::-webkit-scrollbar {
     width: 8px;
   }
 
   &::-webkit-scrollbar-track {
-    background: black;
+    background: var(--black-dynamic);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--background-main);
+    background: var(--green-main);
     border-radius: 2.5px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: var(--black_12);
+    background: var(--green-main);
   }
 }
 

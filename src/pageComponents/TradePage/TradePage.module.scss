@@ -15,7 +15,8 @@
     @include mulish_1000_130;
     color: var(--gray_t);
     text-transform: uppercase;
-    @include gradientText;
+    // @include gradientText;
+    color: var(--green-main);
     text-align: center;
     margin-bottom: 24px;
 

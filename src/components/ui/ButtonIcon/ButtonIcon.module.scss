@@ -1,6 +1,6 @@
 .btn {
   border-radius: 8px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--white-dynamic);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,28 +8,28 @@
   @include mulish_700_18;
   @include transition;
   background: var(--background-main);
-  color: var(--white);
+  color: var(--white-dynamic);
   cursor: pointer;
   outline: none;
 
   &:active {
-    border: 1px solid var(--gray);
+    border: 1px solid var(--white-dynamic);
     background: var(--background-main);
   }
 
   &:focus {
-    border: 1px solid var(--gray);
+    border: 1px solid var(--white-dynamic);
     background: var(--background-main);
   }
 
   &:disabled {
-    border: 1px solid var(--gray);
+    border: 1px solid var(--white-dynamic);
     background: var(--background-main);
   }
 
   &:hover {
-    background: var(--green);
-    border: 1px solid var(--gray);
+    background: var(--green-main);
+    border: 1px solid var(--white-dynamic);
     color: var(--background-main);
   }
 

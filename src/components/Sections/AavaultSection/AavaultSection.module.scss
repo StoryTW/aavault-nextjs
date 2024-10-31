@@ -13,7 +13,8 @@
       align-items: center;
 
       .title {
-        @include gradientText;
+        // @include gradientText;
+        color: var(--green-main);
         text-transform: uppercase;
         margin-bottom: 36px;
         @include mulish_1000_64;

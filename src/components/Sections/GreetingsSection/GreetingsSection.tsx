@@ -1,10 +1,10 @@
 'use client';
 import React, { useRef } from 'react';
 import styles from './GreetingsSection.module.scss';
-import Image from 'next/image';
 import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink';
 import { GreetingsMobileText } from '@/components/GreetingsMobileText/GreetingsMobileText';
 import { motion, useInView } from 'framer-motion';
+import IconPalmaWhite from '@/assets/images/icon-palma.svg';
 
 export const GreetingsSection = () => {
   const refTitle = useRef(null);
@@ -35,7 +35,9 @@ export const GreetingsSection = () => {
             animate={{ opacity: inViewTitle ? 1 : 0, y: inViewTitle ? 0 : 40 }}
             transition={{ duration: 0.7 }}
           >
-            Greetings! I AM <span>VAULT</span>. I am here to share my story with you
+            Palma Network -
+            <br />
+            AI-Driven Multi-Blockchain Trading Platform
           </motion.h2>
         </div>
         <div className={styles.robot}>
@@ -46,19 +48,9 @@ export const GreetingsSection = () => {
             animate={{ opacity: inViewImage ? 1 : 0, y: inViewImage ? 0 : 40 }}
             transition={{ duration: 0.7 }}
           >
-            <Image
-              src='/images/robot.png'
-              height={510}
-              width={427}
-              alt='robot'
-              sizes='100vw'
-              priority
-              quality={100}
-              style={{
-                height: 'auto',
-                width: '100%',
-              }}
-            />
+            <div className={styles.icon}>
+              <IconPalmaWhite />
+            </div>
           </motion.div>
         </div>
         <div className={styles.description}>
@@ -70,19 +62,19 @@ export const GreetingsSection = () => {
             transition={{ duration: 0.7 }}
           >
             <div className={styles.text}>
-              As a multi-blockchain terminal for decentralized exchanges (DEX), I offer unmatched
-              trading tools such as sniper trading, stop loss, take profit, automatic token auditing
-              and more, providing users with enhanced security, speed and convenience
+              Palma Network is a next-gen multi-blockchain trading platform that combines AI-powered
+              tools with advanced trading options for secure, efficient transactions.
               <br />
-              <br />I have studied the DEX trading field well and realized my purpose in the web 3.0
-              world. My mission is to change the DEX trading industry by allowing everyone to buy
-              tokens securely, quickly and conveniently without hassle
+              <br />
+              Palma’s unique mix of AI-driven features, advanced tools and innovative technology
+              directly addresses the market’s demand for scalability, security, and high
+              performance, enabling traders to maximize efficiency across multiple networks.
             </div>
 
             <GreetingsMobileText />
 
             <ButtonLink
-              href='https://whitepaper.aavault.io'
+              href='https://whitepaper.palma.network'
               target='_blank'
               className={styles.link}
             >

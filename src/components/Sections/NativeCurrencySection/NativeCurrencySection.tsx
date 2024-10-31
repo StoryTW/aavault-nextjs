@@ -1,7 +1,10 @@
+'use client'
 import React from 'react';
 import styles from './NativeCurrencySection.module.scss';
 import { CardCurrency } from '@/components/CardCurrency/CardCurrency';
 import Image from 'next/image';
+import { useHydrated } from '@/hooks/useHydrated';
+import { useTheme } from 'next-themes';
 
 const DATA = [
   {
@@ -55,16 +58,23 @@ const DATA = [
 ];
 
 export const NativeCurrencySection = () => {
+  const hasHydrated = useHydrated();
+
+  const { theme } = useTheme();
+
+  if (!hasHydrated) return null;
+
   return (
     <section id='tokenomics' className={styles.nativeCurrency}>
       <div className={styles.header}>
         <div className={styles.caption}>&lt; Token and tokenomics &gt;</div>
         <h2 className={styles.title}>
-          $AAVA IS THE ICONIC <span>currency</span>
+          $PALMA IS THE ICONIC <span>currency</span>
         </h2>
         <div className={styles.description}>
-          Enhance your journey with the $AAVA token: indulge in exclusive access, reduced fees,
-          staking rewards, and participate in DAO governance
+          Maximize your experience with the $PALMA token: enjoy exclusive access, reduced fees,
+          staking rewards, and DAO governance. Join the whitelist for a chance to be part of our
+          journey.
         </div>
       </div>
       <div className={styles.content}>
@@ -84,7 +94,7 @@ export const NativeCurrencySection = () => {
         </ul>
         <div className={styles.image}>
           <Image
-            src={'/images/tokenomicsCircle.webp'}
+            src={theme === 'dark' ? '/images/circle.svg' : '/images/circle-white.svg'}
             width={629}
             height={629}
             alt='diagram'

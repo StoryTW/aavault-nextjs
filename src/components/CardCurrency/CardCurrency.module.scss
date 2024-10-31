@@ -1,5 +1,5 @@
 .card {
-  background: #191919;
+  background: var(--bg_19_dynamic);
   border-radius: 8px;
 
   &.preseed {
@@ -39,6 +39,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    // @include respond(mobile) {
+    //   gap: 24px;
+    // }
 
     .nameInfo {
       .name {

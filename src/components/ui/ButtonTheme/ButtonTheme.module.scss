@@ -1,0 +1,15 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--white-dynamic);
+  background: var(--background-main);
+  @include transition;
+
+  &:focus {
+    border: 1px solid var(--white-dynamic);
+  }
+}

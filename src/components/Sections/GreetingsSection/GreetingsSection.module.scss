@@ -66,7 +66,7 @@
 
         span {
           text-transform: uppercase;
-          @include gradientText;
+          color: var(--green-main);
         }
       }
     }
@@ -83,20 +83,39 @@
 
       .robotWrapper {
         margin: 40px 54px;
-        max-width: 427px;
-        max-height: 510px;
-        width: 427px;
-        height: 510px;
+        padding: 12px;
+        // max-width: 427px;
+        // max-height: 510px;
+        // width: 427px;
+        // height: 510px;
 
         @include respond(laptopXL) {
           margin: 40px 0px 40px;
         }
 
         @include respond(laptopM) {
-          max-width: 197px;
-          max-height: 232px;
-          width: 197px;
-          height: 232px;
+          padding: 0px;
+          // max-width: 197px;
+          // max-height: 232px;
+          // width: 197px;
+          // height: 232px;
+        }
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            color: var(--white-dynamic);
+          }
+
+          @include respond(laptopM) {
+            svg {
+            width: 197px;
+            height: 232px;
+            }
+          }
         }
       }
     }
