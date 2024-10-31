@@ -28,11 +28,11 @@
       }
 
       @include respond(mobileL) {
-        font-size: 42px;
+        font-size: 40px;
       }
 
       @include respond(mobile) {
-        font-size: 40px;
+        font-size: 38px;
       }
     }
 
