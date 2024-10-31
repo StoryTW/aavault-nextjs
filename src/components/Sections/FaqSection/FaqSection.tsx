@@ -14,7 +14,7 @@ const DATA: IFaqModel[] = [
   {
     id: '<02>',
     question: 'What tools does PALMA offer?',
-    answer: 'Various types of swap, such as TWAP Swap, transfer, orders with SL and TP, and more.',
+    answer: 'Various types of swap, such as TWAP swap, transfer, orders with SL and TP, and more AI-Powered tools',
   },
   {
     id: '<03>',

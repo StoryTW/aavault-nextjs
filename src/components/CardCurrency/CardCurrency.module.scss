@@ -1,38 +1,39 @@
 .card {
   background: var(--bg_19_dynamic);
   border-radius: 8px;
+  border-left: 5px solid var(--green-main);
 
-  &.preseed {
-    border-left: 5px solid #19f9d1;
-  }
+  // &.preseed {
+  //   border-left: 5px solid #19f9d1;
+  // }
 
-  &.private {
-    border-left: 5px solid #19f99b;
-  }
+  // &.private {
+  //   border-left: 5px solid #19f99b;
+  // }
 
-  &.liquidity {
-    border-left: 5px solid #7cfb89;
-  }
+  // &.liquidity {
+  //   border-left: 5px solid #7cfb89;
+  // }
 
-  &.eco {
-    border-left: 5px solid #29d93b;
-  }
+  // &.eco {
+  //   border-left: 5px solid #29d93b;
+  // }
 
-  &.airdrop {
-    border-left: 5px solid #0cb990;
-  }
+  // &.airdrop {
+  //   border-left: 5px solid #0cb990;
+  // }
 
-  &.advisers {
-    border-left: 5px solid #07fa94;
-  }
+  // &.advisers {
+  //   border-left: 5px solid #07fa94;
+  // }
 
-  &.partners {
-    border-left: 5px solid #19f9f9;
-  }
+  // &.partners {
+  //   border-left: 5px solid #19f9f9;
+  // }
 
-  &.team {
-    border-left: 5px solid #1ff634;
-  }
+  // &.team {
+  //   border-left: 5px solid #1ff634;
+  // }
 
   .wrapper {
     padding: 10px 24px 10px 29px;
@@ -61,6 +62,7 @@
 
       .percent {
         @include mulish_700_16;
+        color: var(--green-main);
 
         @include respond(laptopM) {
           @include mulish_700_14;
@@ -70,37 +72,37 @@
           @include mulish_600_12;
         }
 
-        &.preseed {
-          color: #19f9d1;
-        }
+        // &.preseed {
+        //   color: #19f9d1;
+        // }
 
-        &.private {
-          color: #19f99b;
-        }
+        // &.private {
+        //   color: #19f99b;
+        // }
 
-        &.liquidity {
-          color: #7cfb89;
-        }
+        // &.liquidity {
+        //   color: #7cfb89;
+        // }
 
-        &.eco {
-          color: #29d93b;
-        }
+        // &.eco {
+        //   color: #29d93b;
+        // }
 
-        &.airdrop {
-          color: #0cb990;
-        }
+        // &.airdrop {
+        //   color: #0cb990;
+        // }
 
-        &.advisers {
-          color: #07fa94;
-        }
+        // &.advisers {
+        //   color: #07fa94;
+        // }
 
-        &.partners {
-          color: #19f9f9;
-        }
+        // &.partners {
+        //   color: #19f9f9;
+        // }
 
-        &.team {
-          color: #1ff634;
-        }
+        // &.team {
+        //   color: #1ff634;
+        // }
       }
     }
 

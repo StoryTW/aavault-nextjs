@@ -29,7 +29,7 @@ export const Header = () => {
 
           <ButtonLink href={'/trade'}>TRADE</ButtonLink>
 
-          <ButtonLink href={'/'} variant='white'>
+          <ButtonLink href={'/#footer'} variant='white'>
             EARLY BIRD
           </ButtonLink>
         </div>

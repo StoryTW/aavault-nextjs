@@ -58,7 +58,7 @@ export const scrollToTop = () => {
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id='footer' className={styles.footer}>
       <div className={styles.wrapper}>
         <div className={styles.logoBlock}>
           <Logo className={styles.logo} />

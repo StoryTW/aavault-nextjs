@@ -28,12 +28,12 @@ export const MainSection = () => {
         transition={{ duration: 2 }}
       >
         <h1 className={styles.title}>
-          DISCOVER DEX
+          GET ACCESS TO
           <br />
-          TRADING IN A
+          OVER $BILLION
         </h1>
         <div className={styles.aavault}>&lt;PALMA&gt;</div>
-        <div className={styles.newWay}>NEW WAY</div>
+        <div className={styles.newWay}>LIQUIDITY</div>
       </motion.div>
 
       <motion.div
