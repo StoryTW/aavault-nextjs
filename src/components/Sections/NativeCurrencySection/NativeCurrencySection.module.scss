@@ -32,6 +32,7 @@
 
     .title {
       @include mulish_1000_64;
+      font-size: 62px;
       color: var(--gray_t);
       text-transform: uppercase;
 
@@ -46,7 +47,9 @@
 
       @include respond(laptopM) {
         @include mulish_1000_28;
+        font-size: 26px;
       }
+
       @include respond(mobile ) {
         width: 290px;
       }

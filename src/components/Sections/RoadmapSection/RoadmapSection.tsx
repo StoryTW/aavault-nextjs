@@ -77,11 +77,11 @@ const DATA = [
         text: '< DEX and CEX Listings >',
       },
       {
-        text: '< New Blockchain Integration >',
+        text: '< Staking, Perpertuals & Futures >',
       },
       {
-        text: '< Staking, Perpertuals & Futures >'
-      }
+        text: '< AI Tools >',
+      },
     ],
   },
   {
