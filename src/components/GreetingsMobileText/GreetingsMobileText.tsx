@@ -16,9 +16,9 @@ export const GreetingsMobileText = () => {
   return (
     <div className={styles.mobile}>
       <div className={styles.text}>
-        As a sophisticated multi-blockchain platform for decentralized exchanges (DEX), I am
-        equipped with unparalleled trading tools like super-trading features, stop loss, take
-        profit, automatic token auditing, and more.
+        As a cutting-edge multi-blockchain platform for decentralized exchanges (DEX), Palma Network
+        offers unparalleled tools like TWAP swaps, split orders, stop-loss/take-profit, real-time AI
+        token audits and more AI-Powered tools.
       </div>
       <AnimatePresence>
         {open && (
@@ -33,14 +33,14 @@ export const GreetingsMobileText = () => {
           >
             <br />
             <p className={styles.showedText}>
-              These features endow users with heightened security, swift transactions, and ultimate
-              convenience.
+              These innovations give users unmatched security, faster transactions, and ultimate
+              ease of use.
             </p>
             <br />
             <p className={styles.showedText}>
-              Through extensive study of the DEX trading realm, I have discovered my true purpose in
-              the web 3.0 landscape. My mission is to revolutionize the DEX trading industry,
-              enabling everyone to purchase tokens securely, rapidly, and effortlessly.
+              Through a deep understanding of the DEX trading world, I’ve honed my mission in the
+              web 3.0 space: to transform DEX trading, empowering everyone to trade tokens securely,
+              swiftly, and seamlessly.
             </p>
           </motion.div>
         )}
