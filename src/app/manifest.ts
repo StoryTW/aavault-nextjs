@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Multi-blockchain platform',
     start_url: '/',
     display: 'standalone',
-    background_color: '#090909',
+    background_color: '#000000',
     theme_color: '#000000',
     icons: [
       {
