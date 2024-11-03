@@ -100,7 +100,7 @@ const DATA = [
         text: '< NFT Marketplace >',
       },
       {
-        text: '< Apps >',
+        text: '< Own Rollup >',
       },
     ],
   },
