@@ -9,7 +9,7 @@ export const Socials = () => {
   return (
     <div className={styles.socials}>
       <div className={styles.wrapper}>
-        <ButtonLink href={' https://x.com/palma_network'} target='_blank'>
+        <ButtonLink href={'x.com/palma_networkk'} target='_blank'>
           <IconTwitter />
         </ButtonLink>
 
