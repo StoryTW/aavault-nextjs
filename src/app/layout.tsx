@@ -11,8 +11,9 @@ import 'swiper/css/effect-cards';
 import '@/assets/styles/index.scss';
 
 const montserrat = Montserrat({
-  subsets: ['latin']
-})
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <GoogleAnalytics gaId='G-4PTRVLFR5Z'/>
+      <GoogleAnalytics gaId='G-4PTRVLFR5Z' />
       <body className={montserrat.className}>
         <Providers>
           <div className='container'>
