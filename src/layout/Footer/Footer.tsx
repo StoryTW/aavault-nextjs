@@ -108,7 +108,7 @@ export const Footer = () => {
               );
             })}
           </nav>
-
+          
           <div className={styles.socialWrapper}>
             <Socials />
             <div className={styles.themesWrapper}>
@@ -116,6 +116,8 @@ export const Footer = () => {
               <ButtonIcon icon={<IconArrow />} onClick={scrollToTop} />
             </div>
           </div>
+
+          <p style={{marginTop: "40px"}}>Mikhaylov Artur Romanovich</p>
 
           <div className={styles.textBlock}>
             <a
