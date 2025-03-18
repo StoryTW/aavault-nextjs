@@ -117,7 +117,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <p style={{marginTop: "40px"}}>Mikhaylov Artur Romanovich</p>
+          <p style={{marginTop: "40px"}}>Founder:  Mikhaylov Artur Romanovich</p>
 
           <div className={styles.textBlock}>
             <a
