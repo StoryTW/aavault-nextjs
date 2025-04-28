@@ -1,21 +1,21 @@
 import { MainPage } from '@/pageComponents/MainPage/MainPage';
 import type { Metadata } from 'next';
 
-const title = 'Palma Network | AI-Powered Multi-Blockchain DeFi Platform';
+const title = 'Palma Network | AI-Powered Multi-Blockchain CeDeFi Platform';
 
 const description =
-  'Palma Network is a AI-powered multi-blockchain DeFi trading platform offering secure and efficient trading operations. Join us to access powerful DeFi tools.';
+  'Palma Network is a AI-powered multi-blockchain CeDeFi trading platform offering secure and efficient trading operations. Join us to access powerful DeFi tools.';
 
 const keywords = [
   'Palma',
   'Network',
   'cryptocurrency',
   'blockchain',
-  'DeFi',
+  'CeDeFi',
   'trading',
   'staking',
   'crypto trading',
-  'DeFi platform',
+  'CeDeFi platform',
 ];
 
 export const metadata: Metadata = {

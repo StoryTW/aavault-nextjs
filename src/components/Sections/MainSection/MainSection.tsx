@@ -44,7 +44,7 @@ export const MainSection = () => {
         transition={{ duration: 0.7 }}
       >
         <div className={styles.content}>
-          Palma Network is revolutionizing DeFi by
+          Palma Network is revolutionizing CeDeFi by
           <br />
           implementing the best tools to improve the
           <br />

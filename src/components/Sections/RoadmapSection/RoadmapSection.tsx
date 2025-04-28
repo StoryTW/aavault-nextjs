@@ -9,7 +9,7 @@ import { useHorizontalScroll } from '@/hooks/useHorizontalScroll';
 const DATA = [
   {
     id: 1,
-    title: 'Q2 2024',
+    title: 'Q4 2024',
     offset: 74,
     dividerHeight: 141,
     leftOffset: 31,
@@ -17,19 +17,16 @@ const DATA = [
     delay: 0.5,
     data: [
       {
-        text: '< Alpha Version >',
+        text: '< Beta Version >',
       },
       {
-        text: '< Blockchain Integration >',
-      },
-      {
-        text: '< Waitlists >',
+        text: '< Integration with BSC, Ethereum, Base, Archethic, Polygon, Arbitrum >',
       },
     ],
   },
   {
     id: 2,
-    title: 'Q3 2024',
+    title: 'Q1 2025',
     offset: 186,
     dividerHeight: 253,
     leftOffset: 61,
@@ -37,16 +34,16 @@ const DATA = [
     delay: 1.5,
     data: [
       {
-        text: '< Demo Version >',
+        text: '< Launch of the platform >',
       },
       {
-        text: '< Marketing >',
+        text: '< Project launch >',
       },
     ],
   },
   {
     id: 3,
-    title: 'Q4 2024',
+    title: 'Q2 2025',
     offset: 246,
     dividerHeight: 345,
     leftOffset: 104,
@@ -54,19 +51,19 @@ const DATA = [
     delay: 2.5,
     data: [
       {
-        text: '< Full Version >',
+        text: '< Company registration and signing of Pre-Seed >',
       },
       {
-        text: '< New Blockchain Integration >',
+        text: '< Start of marketing campaign >',
       },
       {
-        text: '< Listings on CMC and CoinGecko >',
+        text: '< Public release of the platform >',
       },
     ],
   },
   {
     id: 4,
-    title: 'Q1 2025',
+    title: 'Q3 2025',
     offset: 213,
     dividerHeight: 261,
     leftOffset: 61,
@@ -74,19 +71,16 @@ const DATA = [
     delay: 3.5,
     data: [
       {
-        text: '< DEX and CEX Listings >',
+        text: '< Development of limit orders and TWAP on Solana >',
       },
       {
-        text: '< Staking, Perpertuals & Futures >',
-      },
-      {
-        text: '< AI Tools >',
+        text: '< Generation of profits and growth >',
       },
     ],
   },
   {
     id: 5,
-    title: 'Q2 2025',
+    title: 'Q4 2025',
     offset: 93,
     dividerHeight: 154,
     leftOffset: 31,
@@ -94,13 +88,10 @@ const DATA = [
     delay: 2.1,
     data: [
       {
-        text: '< Mobile Version >',
+        text: '< Exit to break-even companies >',
       },
       {
-        text: '< NFT Marketplace >',
-      },
-      {
-        text: '< Own Rollup >',
+        text: '< Integration of cross-chain and AI >',
       },
     ],
   },

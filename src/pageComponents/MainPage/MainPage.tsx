@@ -16,11 +16,11 @@ export const MainPage = () => {
 
       <GreetingsSection />
 
-      <AdvantageSection />
+      {/* <AdvantageSection /> */}
 
       {/* <AavaultSection /> */}
 
-      <NativeCurrencySection />
+      {/* <NativeCurrencySection /> */}
 
       <RoadmapSection />
 

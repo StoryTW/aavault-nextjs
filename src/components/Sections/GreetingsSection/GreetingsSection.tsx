@@ -37,7 +37,7 @@ export const GreetingsSection = () => {
           >
             Palma Network —
             <br />
-            AI-Driven Multi-Blockchain Trading Platform
+            AI-Driven Multi-Blockchain <span>CeDeFi</span> Trading Platform
           </motion.h2>
         </div>
         <div className={styles.robot}>
@@ -74,11 +74,11 @@ export const GreetingsSection = () => {
             <GreetingsMobileText />
 
             <ButtonLink
-              href='https://whitepaper.palma.network'
+              href='https://app.palma.network'
               target='_blank'
               className={styles.link}
             >
-              CHECK WHITEPAPER
+              START TRADING
             </ButtonLink>
           </motion.div>
         </div>

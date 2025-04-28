@@ -14,14 +14,14 @@ export const NAV_DATA = [
     link: '#about',
     name: 'About Us',
   },
-  {
-    link: '#tokenomics',
-    name: 'Tokenomics',
-  },
-  {
-    link: '#benefits',
-    name: 'Benefits',
-  },
+  // {
+  //   link: '#tokenomics',
+  //   name: 'Tokenomics',
+  // },
+  // {
+  //   link: '#benefits',
+  //   name: 'Benefits',
+  // },
   {
     link: '#roadmap',
     name: 'Roadmap',
@@ -117,10 +117,10 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '40px' }}>
+          {/* <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '40px' }}>
             <p>Founder: Mikhaylov Artur Romanovich</p>
             <p>holdandbuydude@gmail.com</p>
-          </div>
+          </div> */}
 
           <div className={styles.textBlock}>
             <a
