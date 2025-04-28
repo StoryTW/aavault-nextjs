@@ -27,7 +27,9 @@ export const Header = () => {
         <div className={styles.rightSide}>
           <SocialsMemo />
 
-          <ButtonLink href={'/trade'}>TRADE</ButtonLink>
+          <ButtonLink href={'https://app.palma.network'} target='_blank'>
+            TRADE
+          </ButtonLink>
 
           <ButtonLink href={'/#footer'} variant='white'>
             EARLY BIRD

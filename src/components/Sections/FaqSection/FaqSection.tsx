@@ -9,7 +9,7 @@ const DATA: IFaqModel[] = [
   {
     id: '<01>',
     question: 'What is the PALMA?',
-    answer: 'A multi-blockchain DeFi platform with integrated security and efficiency features.',
+    answer: 'A multi-blockchain CeDeFi platform with integrated security and efficiency features.',
   },
   {
     id: '<02>',
@@ -23,8 +23,8 @@ const DATA: IFaqModel[] = [
   },
   {
     id: '<04>',
-    question: '$PALMA Holder Benefits?',
-    answer: 'Holders get trading fee discounts, staking rewards, and exclusive bonuses.',
+    question: 'Exclusive AI Tools?',
+    answer: 'AI analyzes and identifies potential risks, predicts prices, and instantly reacts to trends.',
   },
 ];
 
