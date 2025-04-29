@@ -32,7 +32,7 @@ export const Header = () => {
           </ButtonLink>
 
           <ButtonLink href={'/#footer'} variant='white'>
-            EARLY BIRD
+            GET IN TOUCH
           </ButtonLink>
         </div>
 

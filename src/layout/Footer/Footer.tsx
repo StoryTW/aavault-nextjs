@@ -94,7 +94,7 @@ export const Footer = () => {
         </div>
         <div className={styles.emailBlock}>
           <div className={styles.title}>
-            GET AN <span>EARLY BIRD</span>
+            GET IN <span>TOUCH</span> 
           </div>
           <FooterInput />
         </div>
