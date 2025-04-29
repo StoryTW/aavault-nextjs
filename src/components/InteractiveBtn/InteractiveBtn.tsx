@@ -48,7 +48,7 @@ export const InteractiveBtn = () => {
             setIsError(false);
           }}
           type='email'
-          placeholder='GET EN EARLY BIRD'
+          placeholder='ENTER YOUR EMAIL'
           autoComplete='email'
           id='email'
         />
