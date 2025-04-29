@@ -51,12 +51,17 @@ export const MobileBurger: FC<IMobileNav> = ({ openMenu, setOpenMenu }) => {
                 </nav>
                 <div>
                   <div className={styles.btn_wrapper}>
-                    <ButtonLink href={'/trade'} onClick={handleClose}>
+                    <ButtonLink href={'https://app.palma.network'} onClick={handleClose}>
                       TRADE
                     </ButtonLink>
 
-                    <ButtonLink href={'/'} variant='white' className={styles.bird}>
-                      EARLY BIRD
+                    <ButtonLink
+                      href={'/#footer'}
+                      variant='white'
+                      className={styles.bird}
+                      onClick={handleClose}
+                    >
+                      GET IN TOUCH
                     </ButtonLink>
                   </div>
                   <Socials />
