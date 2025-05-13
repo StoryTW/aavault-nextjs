@@ -9,7 +9,7 @@ import { useHorizontalScroll } from '@/hooks/useHorizontalScroll';
 const DATA = [
   {
     id: 1,
-    title: 'Q4 2024',
+    title: 'Q1 2025',
     offset: 74,
     dividerHeight: 141,
     leftOffset: 31,
@@ -17,16 +17,19 @@ const DATA = [
     delay: 0.5,
     data: [
       {
-        text: '< Beta Version >',
+        text: '< Integrate BSC, Ethereum, Base, Apechain, Polygon and Arbitrum blockchains >',
       },
       {
-        text: '< Integration with BSC, Ethereum, Base, Archethic, Polygon, Arbitrum >',
+        text: '< Develop and deploy limit orders >',
+      },
+      {
+        text: '< Conduct beta testing >',
       },
     ],
   },
   {
     id: 2,
-    title: 'Q1 2025',
+    title: 'Q2 2025',
     offset: 186,
     dividerHeight: 253,
     leftOffset: 61,
@@ -34,16 +37,19 @@ const DATA = [
     delay: 1.5,
     data: [
       {
-        text: '< Launch of the platform >',
+        text: '< Develop and deploy TWAP-swap >',
       },
       {
-        text: '< Project launch >',
+        text: '< Build a Telegram bot >',
+      },
+      {
+        text: '< Incorporate the company and close the Pre-Seed round >',
       },
     ],
   },
   {
     id: 3,
-    title: 'Q2 2025',
+    title: 'Q3 2025',
     offset: 246,
     dividerHeight: 345,
     leftOffset: 104,
@@ -51,19 +57,19 @@ const DATA = [
     delay: 2.5,
     data: [
       {
-        text: '< Company registration and signing of Pre-Seed >',
+        text: '< Deploy our own nodes >',
       },
       {
-        text: '< Start of marketing campaign >',
+        text: '< Develop a swap on the Solana blockchain >',
       },
       {
-        text: '< Public release of the platform >',
+        text: '< Implement on-chain analytics >',
       },
     ],
   },
   {
     id: 4,
-    title: 'Q3 2025',
+    title: 'Q4 2025',
     offset: 213,
     dividerHeight: 261,
     leftOffset: 61,
@@ -71,27 +77,90 @@ const DATA = [
     delay: 3.5,
     data: [
       {
-        text: '< Development of limit orders and TWAP on Solana >',
+        text: '< Build cross-chain trading functionality >',
       },
       {
-        text: '< Generation of profits and growth >',
+        text: '< Develop limit orders on the Solana blockchain >',
+      },
+      {
+        text: '< Develop a swap on the Sui blockchain >',
       },
     ],
   },
   {
     id: 5,
-    title: 'Q4 2025',
+    title: 'Q1 2026',
     offset: 93,
     dividerHeight: 154,
     leftOffset: 31,
     circleHeight: 90,
-    delay: 2.1,
+    delay: 0.5,
     data: [
       {
-        text: '< Exit to break-even companies >',
+        text: '< Develop limit orders on the Sui blockchain >',
       },
       {
-        text: '< Integration of cross-chain and AI >',
+        text: '< Develop a TWAP-swap on Sui blockchain >',
+      },
+      {
+        text: '< Develop a TWAP-swap on Solana blockchain >',
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: 'Q2 2026',
+    offset: 213,
+    dividerHeight: 261,
+    leftOffset: 61,
+    circleHeight: 90,
+    delay: 1.5,
+    data: [
+      {
+        text: '< Raise the Seed round >',
+      },
+      {
+        text: '< Develop Telegram Mini Apps >',
+      },
+      {
+        text: '< Launch new AI-powered tools >',
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: 'Q3 2026',
+    offset: 246,
+    dividerHeight: 345,
+    leftOffset: 104,
+    circleHeight: 134,
+    delay: 2.5,
+    data: [
+      {
+        text: '< Develop a Split-swap in EVM-compatible chains >',
+      },
+      {
+        text: '< Design the project’s tokenomics >',
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Q4 2026',
+    offset: 93,
+    dividerHeight: 154,
+    leftOffset: 31,
+    circleHeight: 90,
+    delay: 3.5,
+    data: [
+      {
+        text: '< Develop a Slice-swap in EVM-compatible chains >',
+      },
+      {
+        text: '< Issue the $PALMA token >',
+      },
+      {
+        text: '< Develop the staking system >',
       },
     ],
   },
@@ -112,7 +181,7 @@ export const RoadmapSection = () => {
           behavior: 'smooth',
         });
       }
-    }, 2500);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [inView, elRef.current]);
