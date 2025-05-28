@@ -41,10 +41,10 @@ const POLICY_DATA = [
     href: 'cookies',
     text: '< COOKIES POLICY >',
   },
-  // {
-  //   href: 'https://whitepaper.palma.network',
-  //   text: '< WHITEPAPER >',
-  // },
+  {
+    href: 'https://overview.palma.network',
+    text: '< DOCS >',
+  },
 ];
 
 export const scrollToTop = () => {
